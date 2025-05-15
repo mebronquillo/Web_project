@@ -1,0 +1,741 @@
+/*for sidebar*/
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 112px;
+    background-color: rgb(240 241 241);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+ 
+/*inside the sidebar
+.sidebar a{
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;  
+}*/
+
+.image{
+    height: 105px;
+    width: 110px; 
+}
+
+.spacing{
+    background-color: none;
+    height: 41%;
+}
+
+/*menu button*/
+
+.menu-img{
+    width: 40px;
+    top: -380%;
+    position: absolute;
+    left: -30%;
+}
+
+.qs-img{
+    width: 40px;
+    position: absolute;
+    left: -10px;
+    top: -200%;
+}
+
+.menu_1{
+    font-size: 10px;
+    right: 45%;
+    position: absolute;
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+}
+
+.overlay1{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 251, 251);
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+.menu_2{
+    font-size: 10px;
+    left: 30%;
+    top: 95%;
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    width: 1%;
+    color: rgb(38, 38, 38);
+}
+
+/* quick search button */
+
+.btnbackground{
+    display: inline-block;
+    font-style: arial;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgroundimage{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("hotel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: none;
+    background-attachment: fixed;
+    background-color: aquamarine;
+}
+
+.backgroundtext {
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 86%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.btninquire{
+    border: 1px solid #fff;
+    padding: 11px;
+    font-size: 13px;
+    font-style: arial;
+    text-decoration: none;
+    display: inline-block;
+    width: 130%;
+    color: #fff;
+}
+
+.btnbackground{
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    top: 18%;
+    left: 16%;
+    position: absolute;
+}
+
+.slogan{
+    position: absolute;
+    top: -1%;
+}
+
+.title-page{
+    position: relative;
+    font-size: 6vw;
+    width: 90%;
+    top: -3vw;
+    left: 1%;
+    text-align: left;
+    
+}
+
+.learn-more{
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px;
+    top: -7vw;
+    left: -34%;
+    color: rgb(34, 117, 9);
+}
+
+
+.callme{
+    position: absolute;
+    left: -40%;
+    top: 25%;
+}
+
+.youtube{
+    position: absolute;
+    left: -110%;
+    top: -5%;
+}
+
+.ig{
+    position: absolute;
+    top: -1%;
+    left: -160%;
+}
+
+.facebook{
+    position: absolute;
+    top: -1%;
+    left: -205%;
+}
+
+.mouse-scroll{
+    color: #c6c6c6;
+    position: absolute;
+    left: 12%;
+    top: 90%;
+}
+
+.mouse-scroll p{
+    position: relative;
+    width: 50%;
+    left: -15%;
+    text-align: center;
+}
+
+/*-------------Down page--------------*/
+
+
+.paragraph_layer{
+    position: absolute;
+    margin-left: 112px;
+    padding-left: 540px;
+    margin-top: -1px;
+    padding-bottom: 200px;
+
+}
+
+.paragraph-pack{
+    width: 100%;
+    position: relative;
+    top: 75px;
+    left: -355px;
+    background-color: #ffffff;
+}
+
+.img_ortigas{
+    width: 35%;
+}
+
+.title_description{
+    position: relative;
+    font-size:45px;
+    width: 28%;
+    color: #114814;
+}
+
+.description-paragraph{
+    position: relative;
+    top: -25px;
+}
+
+.description_paragraph{
+    width: 34%;
+    font-size: 15px;
+}
+
+
+
+.paragraph-pack1{
+    position: absolute;
+    left: 38%;
+    top: 15px;
+}
+
+.description_paragraph1{
+    width: 57%;
+    font-size: 15px;
+}
+
+.img_ortigas1{
+    width: 59%;
+}
+
+
+.paragraph-pack2{
+    position: absolute;
+    left: 77%;
+    top: 6px;
+}
+
+.description_paragraph2{
+    width: 137%;
+    font-size: 15px;
+}
+
+.img_ortigas2{
+    width: 156%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------for sidebar-nav-----------*/
+
+.ortigas_long_logo{
+    position: absolute;
+    width: 75%;
+    right: 15%;
+}
+
+.sidebar-nav{
+    top: 31px;
+    border-color: rgb(211, 205, 200);
+    border-right-style: solid;
+    border-width: thin;
+    background-color: rgb(241, 240, 240);
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    position: relative;
+    height: 93%;
+}
+
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(241, 240, 240);
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+.overlay-content{
+    position: relative;
+}
+
+/* navigation buttons */
+
+.closebtn{
+    position: absolute;
+    left: 98%;
+    font-size: 40px;
+    text-decoration: none;
+    color: #114814;
+}
+.home-nav{
+    position: absolute;
+    top: 83px;
+    left: 30px;
+    font-size: 18px;
+    width: 250px;
+    text-decoration: none;
+    color: #8b8888;
+}
+
+.home-nav:hover{
+    color: #313131;
+    transition-duration: 0.2s;
+}
+
+.location-nav{
+    position: absolute;
+    top: 123px;
+    left: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    width: 250px;
+    color: #8b8888;
+}
+.location-nav:hover{
+    color: #313131;
+    transition-duration: 0.2s;
+}
+
+.estates-nav{
+    position: absolute;
+    top: 163px;
+    left: 30px;
+    font-size: 18px;
+    width: 250px;
+    text-decoration: none;
+    color: #8b8888;
+}
+
+.estates-nav:hover{
+    color: #313131;
+    transition-duration: 0.2s;
+}
+
+.properties-nav{
+    position: absolute;
+    top: 203px;
+    left: 30px;
+    font-size: 18px;
+    width: 250px;
+    text-decoration: none;
+    color: #8b8888;
+}
+
+.properties-nav:hover{
+    color: #313131;
+    transition-duration: 0.2s;
+}
+
+.aboutus-nav{
+    position: absolute;
+    top: 243px;
+    left: 30px;
+    font-size: 18px;
+    width: 250px;
+    text-decoration: none;
+    color: #8b8888;
+}
+
+.aboutus-nav:hover{
+    color: #313131;
+    transition-duration: 0.2s;
+}
+
+.contactus-nav{
+    position: absolute;
+    top: 283px;
+    left: 30px;
+    font-size: 18px;
+    width: 250px;
+    text-decoration: none;
+    color: #8b8888;
+}
+
+.contactus-nav:hover{
+    color: #313131;
+    transition-duration: 0.2s;
+}
+
+.search{
+    position: absolute;
+    width: 256px;
+    top: 350px;
+    left: 30px;
+    display: flex;
+}
+
+input::placeholder{
+    color: rgb(201, 202, 202);
+    font-size:100%;
+}
+
+.input{
+    width: 265px;
+    border: 1px solid #cbc5c5;
+    padding: 5px;
+    height: 35px;
+    outline: none;
+}
+
+.search-btn{
+    width: 65px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.search .search-btn{
+    width: 40px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    height: 45px;
+}
+
+.inquire-price{
+    position: absolute;
+    top: 440px;
+    left: 32px;
+    text-decoration: none;
+    font-size: 11px;
+    background-color: #114814;
+    padding:15px;
+    color: white;
+}
+
+.inquire-price:hover{
+    background-color: rgb(54, 70, 54);
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.schedule-visit{
+    position: absolute;
+    top: 440px;
+    left: 160px;
+    padding: 14px;
+    font-size: 11px;
+    color: #114814;
+    border: 1px solid #114814;
+    text-decoration: none;
+}
+
+.schedule-visit:hover{
+    background-color: #114814;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s;
+}
+
+.nav-title{
+    position: absolute;
+    top: 55px;
+    left: 420px;
+    font-size: 40px;
+    font-style: normal;
+    color: #114814;
+}
+
+.all-location-nav{
+    position: absolute;
+    top: 3vw;
+    left: 87vw;
+}
+.all-location-nav a{
+    text-decoration: none;
+    color: #114814;
+}
+
+.all-location-nav b{
+  font-size: 20px;
+  padding-left: 8px;
+
+}
+
+@media(max-width: 1380px){
+    .all-location-nav{
+        position: absolute;
+        left: 84vw;
+    }
+}
+
+.closebtn1{
+    position: absolute;
+    left: 98%;
+    font-size: 40px;
+    text-decoration: none;
+    color: #113814;
+}
+
+
+
+.body-slide{
+    height: 40.5vw;
+    top: 140px;
+    position: absolute;
+    left: 420px;
+    width: 85%;
+    background-color: rgb(241, 240, 240);
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    text-align: center;
+    font-size: 15px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.city-title{  
+    position: absolute;
+    top: 84%;
+    left: 35px;
+}
+
+.estates-btn{
+    position: absolute;
+    top: 37vw;
+    left: 35px;
+    padding: 9px;
+    width: 80px;
+    font-size: 11px;
+    text-decoration: none;
+    border: 1px solid #114814;
+    color: #114814;
+}
+
+.estates-btn:hover{
+    color: #fff;
+    background-color: #3a473a;
+    transition: 0.20s;
+}
+
+.properties-btn{
+    position: absolute;
+    top: 37vw;
+    left: 140px;
+    padding: 9px;
+    width: 80px;
+    font-size: 11px;
+    text-decoration: none;
+    border: 1px solid #114814;
+    color: #114814;
+}
+
+.properties-btn:hover{
+    color: #fff;
+    background-color: #3a473a;
+    transition: 0.20s;
+}
+
+.short-cut-to-qs{
+    position: absolute;
+    top: 41vw;
+    left: 0.5vw;
+}
+
+.short-cut-to-qs h4{
+    font-size: 16px;
+}
+
+.short-cut-to-qs p{
+    position: relative;
+    top: -33px;
+    left: 60px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.quicksearchnav{
+    position: relative;
+    top: -93px;
+    left: 15.3vw;
+    text-decoration: none;
+    color: #114814;
+    font-size: 15px;
+}
+
+
+.shortcut-title-qs{
+    text-decoration: none;
+    position: relative;
+    left: 330px;
+    top: -88px;
+    color: #114814;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.short-cut-to-qs img{
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*sidebar responsive*/
+@media(max-height: 520px){
+    .spacing{
+        height: 30%;
+    }
+    .menu_2{
+        position: absolute;
+        top: 85%;
+    }
+    @media(max-height: 335px){
+        .spacing{
+            height: 10%;
+        }
+        .menu_2{
+            position: absolute;
+            height: 10%;
+        }
+    }
+}
+
+@media (max-width: 1380px){
+    .backgroundtext{
+        left: 80%;
+    }
+    @media(max-width: 950px){
+        .backgroundtext{
+            left: 75%;
+        }
+
+    }
+}
+
+@media (max-height: 845px) {
+    .mouse-scroll{
+        position: absolute;
+        top: 85%;
+    }
+    @media (max-height: 580px){
+        .mouse-scroll{
+            position: absolute;
+            top: 80%;
+        }
+        @media (max-height: 435px){
+            .mouse-scroll{
+                position: absolute;
+                top: 70%;
+            }
+            @media(max-height: 280px){
+                .mouse-scroll{
+                    position: absolute;
+                    top: 60%;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*Mobile Responsive*/
+
+@media (max-width: 320px){
+}
+
+@media(max-width: 375){
+
+}
+
+@media(max-width: 425px){
+
+}
+
+
+
+
+
+
+
+
