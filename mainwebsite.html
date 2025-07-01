@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
     <title>Document</title>
     
 </head>
 <body style="background-color: rgb(234, 234, 234);">
-<script type="text/javascript" src="script.js"></script>
+
 <!------------------------------------Inside the Navigator------------------------------------------->
     
     
@@ -28,9 +29,9 @@
          
             <div class="overlay-content">
                     <a href="mainwebsite.html" class="home-nav">Home</a>
-                    <a href="#" class="location-nav">Locations</a>
-                    <a href="#" class="estates-nav">Estates</a>
-                    <a href="#" class="properties-nav">Properties</a>
+                    <a href="#" class="location-nav" >Locations</a><!----nav to slide------>
+                    <a href="#" class="estates-nav">Estates</a><!------nav to slide1----->
+                    <a href="#" class="properties-nav">Properties</a><!-----nav to slide3---->
                     <a href="aboutus.html" class="aboutus-nav">About Us</a>
                     <a href="contactus.html" class="contactus-nav">Contact Us</a>    
                     
@@ -59,63 +60,24 @@
 
         <div class="html-slide">
             <div class="body-slide">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            
-                            <img src="pasig.jpg" class="pasig-img">
-                                <h2 class="city-title">Pasig City</h2>
-                                <a href="#" class="estates-btn">ESTATES</a>
-                                <a href="#" class="properties-btn">PROPERTIES</a>    
-                        </div>
-                        <div class="swiper-slide">
-                             
-                                <img src="Quezon.jpg" class="quezon-img">
-                                <h2 class="city-title">Quezon City</h2>
-                                <a href="#" class="estates-btn">ESTATES</a>
-                                <a href="#" class="properties-btn">PROPERTIES</a>
-                        </div>
-                        <div class="swiper-slide">
-                                <img src="San_juan.jpg" class="san_juan-img">
-                                <h2 class="city-title">San Juan City</h2>
-                                <a href="#" class="estates-btn">ESTATES</a>
-                                <a href="#" class="properties-btn">PROPERTIES</a>
-
-                            
-                        </div>
-                        <div class="swiper-slide">
-                            
-                                <img src="San_juan.jpg" class="san_juan-img">
-                                <h2>TESTING</h2>
-                                <div>
-                                <a href="#">ESTATES</a>
-                                
-                                </div>
-                            
-                        </div>
-                        
-                        
-                    </div>
-                    
-                    <!-- Swiper JS -->
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                </div>
+                
                 <div class="short-cut-to-qs">
                     <h4>Not quite what you're looking for?                          <p>Try our</p></h4>
-                    <a href="#" class="shortcut-title-qs" onclick="openNav1()">QUICK SEARCH
+                    <a href="#" class="shortcut-title-qs" onclick="openNav1(); closeNav()">QUICK SEARCH
                         <img src="quicksearch.jpg" class="qs-img-logo">  
                     </a>
                     
                 </div>
+
+
             </div>
              
         </div>
 
-
-        
-
         </div>  
         <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
 
 
     <div id="myNav1" class="overlay1">
@@ -129,10 +91,11 @@
     </div>
 
     
+    
 <!---------------------------------------------------------------------------------------------------->
 
     <div class="sidebar">
-        <a href="http://127.0.0.1:5500/mainwebsite.html#" class="img-1">
+        <a href="mainwebsite.html" class="img-1">
             <img src="ortigas logos.jpg"; class="image"> <!--Testing ng Responsive sa size-->
         </a>  
 
@@ -153,108 +116,281 @@
                 <img src="quicksearch.jpg" class="qs-img">
              </a>
         </div>
-            
-    </div>
-
-
-    <div class="backgroundimage">
-        <div class="backgroundtext">
-            <a href="inquire.html" class="btninquire">INQUIRE NOW</a>
-                <a href="#">
-                    <img src="callme.png" class="callme">
-                    <img src="youtube.png" class="youtube">
-                    <img src="instagram.png" class="ig">
-                    <img src="fblogo.png" class="facebook">
-                </a>
-                <a href=""></a>
-            
-        </div>
-        
-        <div class="btnbackground">
-            
-            <div class="responsive-test">
-                <p class="slogan">The Galleon: Modern Living in the Heart of the Ortigas Center</p>
-                <p class="title-page">Residences at The Galleon</p>
-                <a href="#" class="learn-more">Learn More ></a>
-            </div>
-        </div>
-
-        <div class="scrolllogo">
-            <div class="mouse-scroll">
-                <img src="mousescroll.png">
-                <p>SCROLL DOWN</p>
-            </div>
-        </div>
+ 
     </div>
     
-<div>
-    <div class="paragraph_layer" style="background-color: rgb(250, 250, 251);">
+    <div class="container_1">
+        <div class="backimage">
+            FOR SWIPER
+        </div>
+    </div>
 
-        <div class="description-pack">
 
-        <div class="paragraph-pack">
-            <div class="title-description">
-                <h2 class="title_description">Reimagining Modern Living With Master-Planned Developments</h2>
+
+
+   
+    <div class="container_2">
+        
+        <div class="container_column">
+            <h1 class="guard"></h1><!---for shielding the sidebox--->
+            <div class="column_title">
+                <h1 class="titlereimagine">Reimagining Modern Living With Master -Planned Development</h1>
+            </div>
+            <div class="column_with_descrip_img">
+                <h2 class="column_description">Ortigas Land is an esteemed real estate developer in the Philippines that has been 
+                    building developments fostering communities for more than 93 years.
+                </h2>
+                <div class="img_of_90yrs">
+                    <img src="fe2.jpg" class="ninety_yrs_img">
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="container_column_1">
+            <div class="ortigas_landmark">
+                <div class="ortigas_landmark_1">
+                    <img src="fe.jpg" class="ortigasland_img">
+                </div>
             </div>
 
-            <div class="description-paragraph">
-                <h2 class="description_paragraph">
-                    Ortigas Land is an esteemed real estate developer in the Philippines that 
-                    has been building developments fostering communities for more than 93 years.
+            <div class="column_with_descrip_img_1">
+                <h2 class="column_description_1">With our years of experience as one of the leading property developers in the country, we have
+                     mastered the secrete to creating 
+                    residential and commercial spaces that suit the specific needs and preferences of our clients.
                 </h2>
             </div>
-            <div class="img-ortigas">
-                <img src="fe2.jpg" class="img_ortigas">
-            </div>
-              
-            <div class="paragraph-pack1">
-                <div class="img-ortigas1">
-                    <img src="fe.jpg" class="img_ortigas1">
-                </div>
-
-                <div class="description-paragraph1">
-                    <h2 class="description_paragraph1">
-                        With our years of experience as one of the leading property developers in the country, we have 
-                        mastered the secrete to creating residential 
-                        and commercial spaces that suit the specific needs and preferences of our clients.
-                    </h2>
-                </div>
-            </div>
-
-            <div class="paragraph-pack2">
-                <div class="description-paragraph2">
-                    <h2 class="description_paragraph2">
-                        Found in the key locations throughout the Philippines, Ortigas Land properties provide 
-                        unparalleled ease of access to 
-                        different parts of the city and offer the modern Filipino place to live, work, and play.
-                    </h2>
-                </div>
-                <div class="img-ortigas2">
-                    <img src="fe1.jpg" class="img_ortigas2">
-                </div>
-            </div>
-            
         </div>
 
+        <div class="container_column_2">
+            <div class="picture_with_img">
+                <h2 class="column_description_2">Found in the key locations throughout the Philippines, Ortigas Land properties provide unparalleled ease 
+                    of access to different 
+                    parts of the city and offer the modern Filipino place to live, work, and play.
+                </h2>
+                <div class="LWP">
+                    <img class="lwp_img" src="fe1.jpg">
+                </div>
+            </div>
         </div>
         
-
-            
-
-       
-
-        
-
     </div>
-   
 
-    <div class="paragrap1">
+
+
+
+
+
+    <div class="container_3">
+       <div class="container_3_1">
         
+        <div class="estates_img">                  
+            <img src="WebImages/Estates-folder/estate-banner.png" class="estates_banner_img">
+        </div>
+
+        <div class="estate_description">
+            <div class="estate_title">
+                <h1 class="estate_title_1">Estates</h1>
+            </div>
+            <div class="estate_paragraph">
+                <p class="estate_paragraph_1"> We've built traditions and developed new inspirations for living. 
+                    Our master-planned estates include residential and commercial spaces, 
+                    built in mind for those who want to live, work, and play with everything 
+                    they want and need within reach. 
+                </p>
+            </div>
+            <div class="estates_button">
+            <a class="btn_estates">BROWSE ESTATES</a>
+            </div>
+        </div>
+
+       </div>
+
+       <div class="container_3_2">
+            <div class="container_3_2_1">
+                <div class="container_3_2_inside">
+
+                    <div class="ortigas_center">
+                        <div class="ortigas_title">
+                            <h3 class="ortigas_center_title">Ortigas Center</h3>
+                            <p class="pasig_city">Pasig City</p>
+                        </div>
+                        <div class="pasig_city_estate_picture">
+                            <img class="pasig_city_estate_img" src="WebImages/Estates-folder/pasig_city_estate.png">
+                        </div>
+                        <div class="pasig_city_description">
+                            <div class="pasig_city_paragraph">
+                            <p class="pasig_city_paragraph_1">Ortigas Center, a pivotal central business district (CBD) in Metro Manila, 
+                                distinguishes itself as a cornerstone of urban development. Once a vast, barren 
+                                expanse spanning 4,033 hectares, this estate's transformation began when Ortigas Land 
+                                acquired its development rights.
+                            </p>
+                            </div>
+                            <div class="learn_button_1">
+                                <a href="" class="learn_btn_1">LEARN MORE <i class="arrow_1">&gt;</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ortigas_east">
+                        <div class="ortigas_east_title">
+                            <h3 class="ortigas_east_title_1">Ortigas East</h3>
+                            <p class="pasig_city_1">Pasig City</p>
+                        </div>
+                        <div class="ortigas_east_estate_picture">
+                            <img class="ortigas_east_estate_img" src="WebImages/Estates-folder/Ortigas-Center(1).png">
+                        </div>
+                        <div class="ortigas_east_description">
+                            <div class="ortigas_east_paragraph">
+                                <p class="ortigas_east_paragraph_1">
+                                    Reside in Ortigas East and enjoy modern urban living in Metro Manila. 
+                                    Learn more about the properties we offer at Ortigas Land.
+                                </p>
+                            </div>
+                            <div class="learn_button_2">
+                                <a class="learn_btn_2">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capital_commons">
+                        <div class="capital_commons_title">
+                            <h3 class="capital_commons_title_1">Capitol Commons</h3>
+                            <p class="pasig_city_2">Pasig City</p>
+                        </div>
+                        <div class="capital_commons_picture">
+                            <img  class="capital_commons_img" src="WebImages/Estates-folder/Capitol-Commons.png">
+                        </div>
+                        <div class="capital_commons_description">
+                            <div class="capital_commons_paragraph">
+                                <p class="capital_commons_paragraph_1">
+                                    Capitol Commons in Pasig is a dynamic mixed-use development that embodies the essence of urban living. Boasting a strategic location in the bustling metropolis, this vibrant community offers a seamless integration of residential, commercial, and leisure
+                                </p>
+                            </div>
+                            <div class="learn_button_3">
+                                <a class="learn_btn_3">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="greenhills_center">
+                        <div class="greenhills_center_title">
+                            <h3 class="greenhills_center_title_1">Greenhills Center</h3>
+                            <p class="san_juan_city">San Juan City</p>
+                        </div>
+                        <div class="greenhills_center_picture">
+                            <img class="greenhills_center_img" src="WebImages/Estates-folder/Greenhills-Center.png">
+                        </div>
+                        <div class="greenhills_center_description">
+                            <div class="greenhills_center_paragraph">
+                                <p class="greenhills_center_paragraph_1">
+                                    Ortigas Land, in commitment to creating great places across Metro Manila, has built Greenhills 
+                                    Center. Learn more about the region’s first-ever shopping complex today.
+                                </p>
+                            </div>
+                            <div class="learn_button_4">
+                                <a class="learn_btn_4">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="circulo_verde">
+                        <div class="circulo_verde_title">
+                            <h3 class="circulo_verde_title_1">Circulo Verde</h3>
+                            <p class="quezon_city">Quezon City</p>
+                        </div>
+                        <div class="_circulo_verde_picture">
+                            <img class="circulo_verde_img" src="WebImages/Estates-folder/Circulo-Verde.png">
+                        </div>
+                        <div class="circulo_verde_description">
+                            <div class="circulo_verde_paragraph">
+                                <p class="circulo_verde_paragraph_1">
+                                    Your Haven at the Heart of the CityNestled within the bustling 
+                                    metropolis, Circulo Verde is an Ortigas estate that emerges as a sprawling 
+                                    10-hectare sanctuary, harmoniously blending the tranquil embrace of nature with 
+                                    the modern conveniences
+                                </p>
+                            </div>
+                            <div class="learn_button_5">
+                                <a class="learn_btn_5">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div></div>
+                </div>
+            </div>
+       </div>
+    </div> 
+
+    <div class="container_4">
+        <div class="container_4_1">
+            <div class="container_4_picture">
+                <img class="container_4_img" src="WebImages/Web_images_of_ccontainer_4/image_1.jpg">
+                <div class="forspace">
+                    
+                </div>
+            </div>
+
+            <div class="Experience_life">
+                <div class="two_box_flex">
+                    <div class="lwp_box">
+                        <div class="lwp">
+                            <h3 class="lwp_1">Live, Work & Play</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="elm_box">
+                        <div class="elm">
+                            <h3 class="elm_1">Experience life at the Metro</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="properties_description">
+                    <div class="properties_title_">
+                        <h2 class="properties_title_1">Properties</h2>
+                    </div>
+                    <div class="properties_paragraph">
+                    <p class="properties_paragraph_1">
+                        Ortigas Land is the benchmark for modern urban living in Metro Manila. 
+                        For 9 decades, Ortigas has built a legacy of building great places for work and 
+                        play, thereby becoming an important landmark in the metro.
+                    </p>
+                    </div>
+                    <div>
+                        <a>BROWSE PROPERTIES</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two_image">
+                <div class="two_image_1">
+                    <div class="two_image_1_1">
+                        <img  class="two_mage_1_1_img" src="WebImages/Web_images_of_ccontainer_4/image_2.jpg">
+                    </div>
+
+
+                    <div class="two_image_2_1">
+                        <img class="two_image_2_1_img" src="WebImages/Web_images_of_ccontainer_4/image_3.jpg">
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="container_5">grthefewgwegweg
+        <div>
+            <h3>Latest News</h3>
+        </div>
     </div>
 
     
-
-
+    
+ 
 
 </body>
 </html>
