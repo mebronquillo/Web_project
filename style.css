@@ -1,12 +1,23 @@
+
+@import "tailwindcss";
+
 /*for sidebar*/
 .sidebar{
-    margin: 0;
-    padding: 0;
     width: 112px;
     background-color: rgb(255, 255, 255);
     position: fixed;
     height: 100%;
-    overflow: auto;
+}
+
+.sidebar1{
+    padding: 10px;
+    display: grid;
+    height: 100%;
+    column-gap: .625rem;
+    align-items: center;
+    max-width: 320px;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
  
 /*inside the sidebar
@@ -17,9 +28,15 @@
     text-decoration: none;  
 }*/
 
+.logo_main{
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items:flex-start;
+}
+
 .image{
-    height: 105px;
-    width: 110px; 
+    width: 90px; 
 }
 
 .spacing{
@@ -30,32 +47,35 @@
 /*menu button*/
 
 .menu-img{
-    width: 40px;
-    top: -380%;
-    position: absolute;
-    left: -30%;
+    width: 40px; 
 }
 
 .qs-img{
     width: 40px;
-    position: absolute;
-    left: -10px;
-    top: -200%;
+}
+
+.menu1{
+    height: 60px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .menu_1{
     font-size: 10px;
-    right: 45%;
-    position: absolute;
+    display: grid;
     text-decoration: none;
     color: rgb(38, 38, 38);
+    
 }
 
 .overlay1{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: rgb(255, 251, 251);
@@ -63,14 +83,19 @@
     transition: 0.4s;
 }
 
+.menu2{
+    position: absolute;
+    bottom: 30px;
+    align-self: center;
+    left: 1.6rem;
+    width: 10px;
+    cursor: pointer;
+}
+
 .menu_2{
     font-size: 10px;
-    left: 30%;
-    top: 95%;
-    position: absolute;
-    text-decoration: none;
-    text-align: left;
-    width: 1%;
+    display: grid;
+    text-decoration: none;   
     color: rgb(38, 38, 38);
 }
 
@@ -86,10 +111,9 @@
 
 
 body{
-    background-color: #ffffff;
     height: 100%;
     margin: 0;
-    font-family: Albert Sans, Arial, sans-serif;
+    font-family: "Albert Sans", sans-serif;
 }
 
 
@@ -120,7 +144,7 @@ body{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: rgb(241, 240, 240);
@@ -401,14 +425,22 @@ input::placeholder{
 }
 
 
-
-.container_1{
-    background-color: #729875;
-    margin-left: 7rem;
-    height: 100%;
+/* inside of the sidebar */
+.page{
+    background-color: #113814;
+    display: grid;
+    grid-template-columns: 115px auto;
 }
 
+/* MAIN BODY OF THE WHOLE PAGE */
+.mainpage{
+    grid-column-start: 2;
+    background-color: rgb(241, 241, 241);
+}
 
+/* CONTAINER_1 */
+
+/* CONTAINER_2 */
 
 .container_2{
     background-color: #f6f2f2;
@@ -425,8 +457,7 @@ input::placeholder{
 /*--------box 1---------*/
 .container_column{
     margin-top: 7vh;
-    margin-left: 21rem;
-    
+    margin-left: 11rem;
 }
 
 
@@ -492,23 +523,11 @@ input::placeholder{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* CONTAINER_3 */
 
 
 .container_3{
     background-color: #f6f2f2;
-    margin-left: 7rem;
     height: 99.8vh;
 }
 
@@ -517,7 +536,7 @@ input::placeholder{
 }
 
 .estates_img{
-    width: 155vw;
+    width: 46vw;
     height: 26vw;
     overflow: hidden;
     /* background for check spacing */
@@ -534,7 +553,7 @@ input::placeholder{
     position: relative;
     bottom: 2rem;
     padding: 1.25rem;
-    width: 170rem;
+    width: 17rem;
     margin-left: 0.5rem;
 }
 
@@ -546,11 +565,10 @@ input::placeholder{
     position: relative;
     bottom: 10px;
     letter-spacing: .05em;
-    width: 734px;
     line-height: 1.51em;
     font-size: 15px;
     width: 688px;
-    /* background-color: #056e4b;   */
+    background-color: #056e4b;
 }
 
 .estate_title{
@@ -945,10 +963,12 @@ input::placeholder{
     font-weight: 600;
 }
 
-/* CONTAINER 4 */
+/* CONTAINER_4 */
+
+
 
 .container_4{
-    margin-left: 7rem;
+
 }
 
 .container_4_1{
@@ -967,13 +987,8 @@ input::placeholder{
 .container_4_img{
     height: 100%;
     width: 100%;
-    font-family: Albert Sans, Arial, sans-serif;
     font-size: 16px;
 }
-
-
-
-
 
 .Experience_life{
     position: absolute;
@@ -1030,11 +1045,10 @@ input::placeholder{
 }
 
 .properties_description{
-    font-family: Albert Sans, Arial, sans-serif;
     position: relative;
     bottom: 20px;
     background-color: #ffffff;
-    height: 220px;
+    height: 224px;
     padding: 48px;
 }
 
@@ -1044,10 +1058,10 @@ input::placeholder{
 }
 
 .properties_title_1{
-    color:#114315;
+    color:#17633c;
     margin: 0;
     font-size: 33px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .properties_paragraph{
@@ -1064,14 +1078,15 @@ input::placeholder{
     padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 160px;
+    width: 210px;
     text-align: center;
 }
 
 .browse_properties_1{
     color: #f6f2f2;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
+    letter-spacing: 3px;
 }
 
 .two_image{
@@ -1113,30 +1128,92 @@ input::placeholder{
     height: 100%;
 }
 
+/* CONTAINER_5 */
 
 .container_5{
-    background-color: #113814;
-    margin-left: 7rem;
+   display: grid;
+   height: 50vw;
 }
+
+.container_5_1{
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container_5_1 h2{
+    color: #105230;
+    padding-top: 60px;
+    font-size: 45px;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.latestnews_paragraph_title{
+    /* background-color: #056e4b; */
+
+}
+
+.latest_box{
+    position: relative;
+    left: 400px;
+    /* background-color: #313131; */
+    width: 54%;
+}
+
+/* SWIPER */
+
+.swiper {
+      width: 90%;
+      height: 100%;
+    }
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #e9e9e9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.swiper-slide a{
+    
+}
+
+.swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+
+
+
 /*-------------------------------------------*/
 
 
 /*sidebar responsive*/
-@media(max-height: 520px){
-    .spacing{
-        height: 30%;
-    }
-    .menu_2{
-        position: absolute;
-        top: 85%;
+@media(max-height: 620px){
+
+    .menu2{
+        
     }
     @media(max-height: 335px){
-        .spacing{
-            height: 10%;
+        .sidebar1{
+            row-gap: 10%;
         }
-        .menu_2{
-            position: absolute;
-            height: 10%;
+        .menu2{
+            position: relative;
+            top: 100px;
+            font-size: 10px;
+            display: grid;
+            text-decoration: none;   
+            color: rgb(38, 38, 38);
         }
     }
 }

@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
     <title>Document</title>
     
 </head>
@@ -94,43 +95,47 @@
     
     
 <!---------------------------------------------------------------------------------------------------->
+    
 
     <div class="sidebar">
-        <a href="mainwebsite.html" class="img-1">
-            <img src="ortigas logos.jpg"; class="image"> <!--Testing ng Responsive sa size-->
-        </a>  
 
-        <div class="spacing">
-            <!-----Pure Emptyness for spacing---->
+        <div class="sidebar1">
+            
+        <div class="logo_main">
+            <a href="mainwebsite.html" class="img-1">
+                <img src="ortigas logos.jpg"; class="image"> <!--Testing ng Responsive sa size-->
+            </a>  
         </div>
 
-
-        <div class="menu1">
-            <a style="cursor: pointer;" class="menu_1" onclick="openNav()">Menu
-                <img src="menu.jpg" class="menu-img" >
+        <div class="menu1" onclick="openNav()">
+            <img src="menu.jpg" class="menu-img" >
+            <a style="cursor: pointer;" class="menu_1" >Menu   
             </a>           
         </div>
     
             
         <div class="menu2">
-            <a style="cursor: pointer;" class="menu_2" onclick="openNav1()">Quick Search
-                <img src="quicksearch.jpg" class="qs-img">
+            <img src="quicksearch.jpg" class="qs-img" onclick="openNav1()">
+            <a style="cursor: pointer;" class="menu_2">Quick Search
              </a>
+        </div>
+
         </div>
  
     </div>
     
-    <div class="container_1">
-        <div class="backimage">
-            FOR SWIPER
+    
+    <div class="page">
+        <!-- MAIN BODY OF THE PAGE -->
+        <div class="mainpage"> 
+
+        <div>
+            BRUH FIX THIS
         </div>
-    </div>
 
-
-
-
-   
-    <div class="container_2">
+        
+        
+        <div class="container_2">
         
         <div class="container_column">
             <h1 class="guard"></h1><!---for shielding the sidebox--->
@@ -177,12 +182,7 @@
         
     </div>
 
-
-
-
-
-
-    <div class="container_3">
+     <div class="container_3">
        <div class="container_3_1">
         
         <div class="estates_img">                  
@@ -322,6 +322,8 @@
                 </div>
             </div>
        </div>
+
+       
     </div> 
 
     <div class="container_4">
@@ -352,7 +354,7 @@
                 <div class="properties_description">
                     <div class="properties_description_1">
                     <div class="properties_title">
-                        <h2 class="properties_title_1"><b>Properties</b></h2>
+                        <h2 class="properties_title_1">Properties</h2>
                     </div>
                     <div class="properties_paragraph">
                         <p class="properties_paragraph_1">
@@ -386,11 +388,70 @@
     </div>
 
     <div class="container_5">
-        <div>
-            <h2>Latest News</h2>
-            <p>We've built traditions</p>
+        <div class="container_5_1">
+            <div class="latestnews_paragraph_title">
+                <div class="latest_box">
+                    <h2 class="latest_title">Latest News</h2>
+                    <p class="latestnews_paragraph">
+                    We've built traditions and developed new inspirations for living. Our master-planned
+                    estates include residential and commercials spaces, built in mind for those who want
+                    to live, work, and play with everything they want and need within reach.
+                    </p>
+                </div>
+            </div>
         </div>
+    
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <h3>Make your Move to an Eco-Friendly Community Easier</h3>
+                    <a>Read</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <h3>9 Reasons to Invest in a Property in Capitol Commons in Pasig</h3>
+                    <a>Read</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <h3>Tips on How to Choose a Good Condon Unit</h3>
+                    <a>Read</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <h3>Top 12 Luxuty Condominium Amenities You Should Look For</h3>
+                    <a>Read</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <h3>10 Reasons Why You Should Invest in Luxury Condos</h3>
+                    <a>Read</a>
+                </div>
+            </div>
+        <div class="swiper-pagination"></div>
+        </div>
+        
+    
     </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    </div>
+<!-- div of main page -->
+
+        
+    </div>
+
+    
+    
+
+    
+    
+
 
     
     
