@@ -18,14 +18,23 @@ function closeNav1() {
     document.getElementById("myNav1").style.width = "0%";
   }
 
+  
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      bulletActiveClass: "bulletActive",
+      bulletClass: "pagination_bullet",
+      clickable: true
     },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // }
   });
+
+
 
 
 
