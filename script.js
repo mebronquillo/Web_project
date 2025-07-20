@@ -34,6 +34,12 @@ function closeNav1() {
     // }
   });
 
+var swiper = new Swiper (".mySwiper1", {
+  speed: 1300,
+  autoplay: {
+    delay: 2300
+  },
+});
 
 
 

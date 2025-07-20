@@ -440,9 +440,97 @@ input::placeholder{
 }
 
 /* CONTAINER_1 */
-.container_1{
+.container_1{ /* html */
+    margin: 0;
+    display: grid;
     width: 100%;
+    height: 100vh;
 }
+
+.flex_items{
+    position: absolute;
+    top: 40px;
+    right: 6rem;
+    z-index: 2;
+}
+
+.inquire-btn{
+/*  */
+}
+
+.inquire-btn1{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 0.1rem;
+    padding: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.fb_btn{  
+}
+.fb_btn1 {
+    color: #ffffff;
+}
+
+.insta_btn{
+}
+.insta_btn1{
+    color: #ffffff;
+}
+
+.youtube_btn{
+}
+.youtube_btn1{
+    color: #ffffff;
+}
+
+.contact_btn{
+    position: relative;
+    bottom: 10px;
+}
+
+.contact_btn1{
+    display: flex;
+    text-decoration-line: none;
+    gap: 10px;
+    color: #ffffff;
+}
+.contact_btn1 .fa{
+    position: relative;
+    top: 10px;
+}
+
+.contact_btn_num{
+    font-size: 14px;
+    color: #e7e4e4;
+}
+
+.logo_in_backgroundimage{
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.mySwiper1{
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper1 .swiper-slide img{
+    height: 100%;
+    
+}
+
+
+
+
+
 
 
 /* CONTAINER_2 */
@@ -1165,7 +1253,6 @@ input::placeholder{
 
 .latest_box{
     position: relative;
-
     left: 400px;
     /* background-color: #313131; */
     width: 54%;
@@ -1173,7 +1260,7 @@ input::placeholder{
 
 /* SWIPER */
 
-.swiper {
+.mySwiper {
     position: relative;
     top: 10px;
     bottom: 1vw;
