@@ -19,6 +19,14 @@ function closeNav1() {
   }
 
   
+var swiper = new Swiper (".mySwiper1", {
+  speed: 1500,
+  loop: true,
+  autoplay: {
+    delay: 2500
+  },
+});
+
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -34,12 +42,10 @@ function closeNav1() {
     // }
   });
 
-var swiper = new Swiper (".mySwiper1", {
-  speed: 1300,
-  autoplay: {
-    delay: 2300
-  },
-});
+
+
+
+
 
 
 
