@@ -1519,13 +1519,10 @@ input::placeholder{
 .swiper-pagination{
     height: 1px;
 }
-.swiper-pagination1{
-    height: 100px;
-}
 
 
 .pagination_bullet{
-    padding: 50px 60px;
+    padding: 1px 60px;
     border-radius: 0;
     opacity: 1;
     background-color: rgb(242, 242, 242);
