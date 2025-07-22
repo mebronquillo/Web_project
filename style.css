@@ -755,6 +755,12 @@ input::placeholder{
     cursor: pointer;
 }
 
+.swiper-pagination .swiper-pagination1{
+    position: relative;
+    bottom: 100px;
+    
+}
+
 
 
 /* CONTAINER_2 */
@@ -1508,11 +1514,24 @@ input::placeholder{
     object-fit: cover;
 }
 
+
+
 .swiper-pagination{
     height: 1px;
 }
+.swiper-pagination1{
+    height: 100px;
+}
+
 
 .pagination_bullet{
+    padding: 50px 60px;
+    border-radius: 0;
+    opacity: 1;
+    background-color: rgb(242, 242, 242);
+}
+
+.pagination_bullet1{
     padding: 1px 60px;
     border-radius: 0;
     opacity: 1;

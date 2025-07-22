@@ -18,13 +18,22 @@ function closeNav1() {
     document.getElementById("myNav1").style.width = "0%";
   }
 
-  
+var menu =['Slide 1','Slide 2','Slide 3','Slide 4']
 var swiper = new Swiper (".mySwiper1", {
   speed: 1500,
   loop: true,
+  parallax: true,
   autoplay: {
     delay: 2500
   },
+  pagination:{
+    el:".swiper-pagination1",
+    bulletClass: "pagination_bullet",
+    clickable: true,
+    renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+    },
 });
 
   var swiper = new Swiper(".mySwiper", {
