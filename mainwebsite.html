@@ -22,8 +22,9 @@
     
 
         <div id="myNav" class="overlay">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); closeSwipe2(); closeSwipe3(); closeSwipe4()">&times;</a>
         <div class="sidebar-nav">
             <a href="mainwebsite.html" class="img-1">
                 <img src="ortigas_long_logo.jpg" class="ortigas_long_logo">
@@ -31,9 +32,9 @@
          
             <div class="overlay-content">
                     <a href="mainwebsite.html" class="home-nav">Home</a>
-                    <a href="#" class="location-nav" >Locations</a><!----nav to slide------>
-                    <a href="#" class="estates-nav">Estates</a><!------nav to slide1----->
-                    <a href="#" class="properties-nav">Properties</a><!-----nav to slide3---->
+                    <a href="#" class="location-nav" onclick="openSwipe2();  closeSwipe3(); closeSwipe4()">Locations</a><!----nav to slide------>
+                    <a href="#" class="estates-nav" onclick="openSwipe3(); closeSwipe2(); closeSwipe4()">Estates</a><!------nav to slide1----->
+                    <a href="#" class="properties-nav"onclick="openSwipe4(); closeSwipe2(); closeSwipe3()">Properties</a><!-----nav to slide3---->
                     <a href="aboutus.html" class="aboutus-nav">About Us</a>
                     <a href="contactus.html" class="contactus-nav">Contact Us</a>    
                     
@@ -48,21 +49,51 @@
                     
                     <a href="#" class="inquire-price">INQUIRE PRICE</a>
                     <a href="#" class="schedule-visit">SCHEDULE A VISIT</a>
+
             </div>
         </div>
 
 
-        <div class="nav-title">
-            <head>LOCATIONS</head>
-        </div>
-
-        <div class="all-location-nav">
-        <a href="#">ALL LOCATIONS                   <b>&gt;</b></a>
-        </div>
+        
 
         <div class="html-slide">
-            <div class="body-slide">
-                
+            <div class="body-slide">   
+                    <div class="location_swiper" id="swipe2Form">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">slide 1</div>
+                                <div class="swiper-slide">slide 2</div>
+                                <div class="swiper-slide">slide 3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="estates_swiper" id="swipe3Form">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">slide 1</div>
+                                <div class="swiper-slide">slide 2</div>
+                                <div class="swiper-slide">slide 3</div>
+                                <div class="swiper-slide">slide 4</div>
+                                <div class="swiper-slide">slide 5</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="properties_swiper" id="swipe4Form">
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">slide 1</div>
+                                <div class="swiper-slide">slide 2</div>
+                                <div class="swiper-slide">slide 3</div>
+                                <div class="swiper-slide">slide 4</div>
+                                <div class="swiper-slide">slide 5</div>
+                                <div class="swiper-slide">slide 6</div>
+                                <div class="swiper-slide">slide 7</div>
+                            </div>
+                        </div>
+                    </div>
+
                 <div class="short-cut-to-qs">
                     <h4>Not quite what you're looking for?                          <p>Try our</p></h4>
                     <a href="#" class="shortcut-title-qs" onclick="openNav1(); closeNav()">QUICK SEARCH
@@ -92,6 +123,23 @@
             </div>
     </div>
 
+    <div class="message_chat">
+        <div class="inside_message_chat">
+            <a class="message_style" onclick="openForm()"><i class="fa">&#xf075;</i></a>
+        </div>
+
+    <div class="popup_chat" id="myChat">
+        <form class="form-container">
+            <h1>Chat us!</h1>
+            <h5>Messages</h5>
+            <textarea placeholder="type message..."></textarea>
+
+            <a class="send_btn">Send</a>
+            <a class="close_message" onclick="closeForm()">Close</a>
+        </form>
+    </div>
+    </div>
+
     
     
 <!---------------------------------------------------------------------------------------------------->
@@ -107,7 +155,7 @@
             </a>  
         </div>
 
-        <div class="menu1" onclick="openNav()">
+        <div class="menu1" onclick="openNav(); openSwipe2();">
             <img src="menu.jpg" class="menu-img" >
             <a style="cursor: pointer;" class="menu_1" >Menu   
             </a>           
@@ -234,9 +282,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="swiper-pagination1 swiper-pagination
+                swiper-pagination-clickable swiper-pagination-clickable1
+                swiper-pagination-bullets swiper-pagination-bullets1
+                swiper-pagination-horizontal swiper-pagination-horizontal1"> -->
                 </div>
-                
-                
             </div>
         </div>
         

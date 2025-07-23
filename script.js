@@ -18,6 +18,15 @@ function closeNav1() {
     document.getElementById("myNav1").style.width = "0%";
   }
 
+// Popup chat 
+function openForm(){
+    document.getElementById("myChat").style.display = "block";
+}
+
+function closeForm(){
+    document.getElementById("myChat").style.display = "none";
+}
+
 var menu =['Slide 1','Slide 2','Slide 3','Slide 4']
 var swiper = new Swiper (".mySwiper1", {
   speed: 1500,
@@ -51,7 +60,42 @@ var swiper = new Swiper (".mySwiper1", {
     // }
   });
 
+var swiper = new Swiper (".mySwiper2",{
+  slidesPerView: 2,
+  spaceBetween: 30,
+});
 
+var swiper = new Swiper (".mySwiper3",{
+  slidesPerView: 4,
+  spaceBetween: 30,
+});
+
+var swiper = new Swiper (".mySwiper4", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+})
+
+
+function openSwipe2(){
+    document.getElementById("swipe2Form").style.display = "block"; 
+}
+function closeSwipe2(){
+  document.getElementById("swipe2Form").style.display = "none";
+}
+
+function openSwipe3(){
+    document.getElementById("swipe3Form").style.display = "block"; 
+}
+function closeSwipe3(){
+  document.getElementById("swipe3Form").style.display = "none";
+}
+
+function openSwipe4(){
+    document.getElementById("swipe4Form").style.display = "block"; 
+}
+function closeSwipe4(){
+  document.getElementById("swipe4Form").style.display = "none";
+}
 
 
 

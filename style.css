@@ -81,7 +81,7 @@
     left: 0;
     background-color: rgb(255, 251, 251);
     overflow-x: hidden;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
 .menu2{
@@ -117,8 +117,94 @@ body{
     font-family: "Albert Sans", sans-serif;
 }
 
+.message_chat{
+    min-height: 96px;
+    min-width: 100px;
+    width: 92px;
+    height: 92px;
+    right: 0;
+    display: initial;
+    z-index: 7;
+    position: fixed;
+    bottom: 0;
 
+}
 
+.inside_message_chat{
+    background-color: #10613a;
+    padding: 10px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.message_style{
+    position: relative;
+    left: 5px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.popup_chat{
+    display: none;
+    height: 700px;
+    transition: 0.25s;
+    min-width: 0px;
+    right: 10rem;
+    position: fixed;
+    bottom: 10rem;
+    background-color: beige;
+    position: absolute;
+}
+
+/* For Responsive chat ui */
+/* @media(max-height: 1070px){
+    .popup_chat{
+    height: 500px;
+    transition: 0.25s;
+    min-width: 0px;
+    right: 10rem;
+    display: initial;
+    position: fixed;
+    bottom: 10rem;
+    background-color: rgb(176, 176, 47);
+    position: absolute;
+    z-index: 8;
+}
+} */
+
+.location_swiper{
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+.mySwiper2{
+    width: 100%;
+    height: 100%;
+}
+
+.estates_swiper{
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+.mySwiper3{
+    width: 100%;
+    height: 100%;
+}
+
+.properties_swiper{
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+.mySwiper4{
+    height: 100%;
+    width: 100%;
+}
 
 /*------for sidebar-nav-----------*/
 
@@ -150,7 +236,8 @@ body{
     left: 0;
     background-color: rgb(241, 240, 240);
     overflow-x: hidden;
-    transition: 0.4s;
+    transition: 0.2s;
+    display: flex;
 }
 
 .overlay-content{
@@ -426,6 +513,8 @@ input::placeholder{
 }
 
 
+
+
 /* inside of the sidebar */
 .page{
     background-color: #113814;
@@ -437,6 +526,12 @@ input::placeholder{
 .mainpage{
     grid-column-start: 2;
     background-color: rgb(241, 241, 241);
+}
+
+.popup_chat{
+    background-color: beige;
+    position: absolute;
+    z-index: 8;
 }
 
 /* CONTAINER_1 */
@@ -543,7 +638,6 @@ input::placeholder{
     display: flex;
     gap: 30px;
 }
-
 
 .mySwiper1{
     width: 100%;
