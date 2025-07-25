@@ -8,6 +8,7 @@
     background-color: rgb(255, 255, 255);
     position: fixed;
     height: 100%;
+    
 }
 
 .sidebar1{
@@ -173,10 +174,33 @@ body{
 }
 } */
 
+.location_title{
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.location_title_inside{
+    font-size: 40px;
+    visibility: visible;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+
+/* Location Swiper */
 .location_swiper{
+    padding-left: 3rem;
     display: none;
     position: relative;
+    right: 4.3rem;
+    
     height: 100%;
+    width: 93%;
 }
 
 .mySwiper2{
@@ -184,6 +208,18 @@ body{
     height: 100%;
 }
 
+.mySwiper2 .swiper-slide{
+    width: 100%;
+    background-color: aqua;
+}
+
+.mySwiper2 .swiper-slide img{
+    width: 100%;
+    height: 80%;
+}
+
+
+/* Estates Swiper */
 .estates_swiper{
     display: none;
     position: relative;
@@ -195,6 +231,7 @@ body{
     height: 100%;
 }
 
+/* Properties Swiper */
 .properties_swiper{
     display: none;
     position: relative;
@@ -208,234 +245,214 @@ body{
 
 /*------for sidebar-nav-----------*/
 
-.ortigas_long_logo{
-    position: absolute;
-    width: 75%;
-    right: 15%;
-}
-
-.sidebar-nav{
-    top: 31px;
-    border-color: rgb(211, 205, 200);
-    border-right-style: solid;
-    border-width: thin;
-    background-color: rgb(241, 240, 240);
-    margin: 0;
-    padding: 0;
-    width: 320px;
-    position: relative;
-    height: 93%;
-}
-
 .overlay{
+    display: grid;
+    grid-template-columns: minmax(320px, 20%) 1fr;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: rgb(241, 240, 240);
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
+    z-index: 3;
     transition: 0.2s;
-    display: flex;
+    
 }
 
-.overlay-content{
-    position: relative;
+.sidebar_nav{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-color: rgb(197, 196, 196);
+    border-style: solid;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    row-gap: .625rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-rows: min-content;
+    display: grid;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 255px;
 }
+
+.logo_of_ortigas{
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-right: 0;
+    column-gap: .625rem;
+    justify-content: center;
+}
+.logo_ortigas_btn{
+    width: 14rem;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.logo_ortigas_long{
+    width: 100%;
+}
+
+.all_nav_items{
+    padding-left: 0;
+    row-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    list-style-type: none;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.nav_home a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #aca7a7;
+}
+.nav_home a:hover{
+    color: black;
+}
+
+/* Navigator of the swiper js */
+.nav_items{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #aca7a7;
+}
+.nav_items:hover{
+    color: black;
+}
+.nav_items.active {
+    color: rgb(0, 0, 0);
+}
+
+.nav_aboutus a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #aca7a7;
+}
+.nav_aboutus a:hover{
+    color: black;
+}
+.nav_contactus a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #aca7a7;
+}
+.nav_contactus a:hover{
+    color: black;
+}
+
+.type_locations{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.type_locations input{
+    outline: none;
+    height: 27px;
+    padding-right: .5rem;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-style: solid;
+    border-width: 1px;
+    width: 80%;
+}
+.type_locations button{
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    top: 22.5rem;
+    left: 2.3rem;
+    font-size: 24px;
+    position: absolute;
+    border-width: 0px;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+.nav_buttons{
+    display: flex;
+    flex-direction: row;
+}
+.inquire_btn_nav{
+    margin-right: 15px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    width: 50%;
+    height: 44px;
+    padding: 0;
+    line-height: 44px;
+    text-decoration: none;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #105230;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #105230;
+}
+.inquire_btn_nav:hover{
+    background-color:#2f443a ;
+    transition: 0.4s;
+    color: #ffffff;
+}
+.schedule_btn_nav{
+    margin-right: 3px;
+    font-size: 12px;
+    width: 50%;
+    height: 44px;
+    padding: 0;
+    line-height: 44px;
+    text-decoration: none;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    display: inline-block;
+    cursor: pointer;
+}
+.schedule_btn_nav:hover{
+    background-color: #48514d;
+    transition: 0.4s;
+    color: #ffffff;
+}
+
+.mainbody_nav{
+    position: relative;
+    height: calc(var(--vh, 1vh) * 100);
+    padding-right: 0;
+    padding-left: 3rem;
+    padding-top: 0;
+    padding-bottom: 3rem;
+    overflow-y: auto;
+    /* width: 100%; */
+    max-height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+
 
 /* navigation buttons */
 
 .closebtn{
-    position: absolute;
-    left: 98%;
-    font-size: 40px;
-    text-decoration: none;
-    color: #114814;
-}
-.home-nav{
-    position: absolute;
-    top: 83px;
-    left: 30px;
-    font-size: 18px;
-    width: 250px;
-    text-decoration: none;
-    color: #8b8888;
-}
-
-.home-nav:hover{
-    color: #313131;
-    transition-duration: 0.2s;
-}
-
-.location-nav{
-    position: absolute;
-    top: 123px;
-    left: 30px;
-    font-size: 18px;
-    text-decoration: none;
-    width: 250px;
-    color: #8b8888;
-}
-.location-nav:hover{
-    color: #313131;
-    transition-duration: 0.2s;
-}
-
-.estates-nav{
-    position: absolute;
-    top: 163px;
-    left: 30px;
-    font-size: 18px;
-    width: 250px;
-    text-decoration: none;
-    color: #8b8888;
-}
-
-.estates-nav:hover{
-    color: #313131;
-    transition-duration: 0.2s;
-}
-
-.properties-nav{
-    position: absolute;
-    top: 203px;
-    left: 30px;
-    font-size: 18px;
-    width: 250px;
-    text-decoration: none;
-    color: #8b8888;
-}
-
-.properties-nav:hover{
-    color: #313131;
-    transition-duration: 0.2s;
-}
-
-.aboutus-nav{
-    position: absolute;
-    top: 243px;
-    left: 30px;
-    font-size: 18px;
-    width: 250px;
-    text-decoration: none;
-    color: #8b8888;
-}
-
-.aboutus-nav:hover{
-    color: #313131;
-    transition-duration: 0.2s;
-}
-
-.contactus-nav{
-    position: absolute;
-    top: 283px;
-    left: 30px;
-    font-size: 18px;
-    width: 250px;
-    text-decoration: none;
-    color: #8b8888;
-}
-
-.contactus-nav:hover{
-    color: #313131;
-    transition-duration: 0.2s;
-}
-
-.search{
-    position: absolute;
-    width: 256px;
-    top: 350px;
-    left: 30px;
-    display: flex;
-}
-
-input::placeholder{
-    color: rgb(201, 202, 202);
-    font-size:100%;
-}
-
-.input{
-    width: 265px;
-    border: 1px solid #cbc5c5;
-    padding: 5px;
-    height: 35px;
-    outline: none;
-}
-
-.search-btn{
-    width: 65px;
-    border: none;
+    top: .625rem;
     cursor: pointer;
-    background-color: #ffffff;
-}
-
-.search .search-btn{
-    width: 40px;
+    right: .625rem;
     position: absolute;
-    top: 1px;
-    right: 1px;
-    height: 45px;
-}
-
-.inquire-price{
-    position: absolute;
-    top: 440px;
-    left: 32px;
+    line-height: 1;
+    font-size: 2.5rem;
+    border-width: 0px;
     text-decoration: none;
-    font-size: 11px;
-    background-color: #114814;
-    padding:15px;
-    color: white;
+    color: #03640b;
 }
 
-.inquire-price:hover{
-    background-color: rgb(54, 70, 54);
-    color: white;
-    transition-duration: 0.4s;
-}
-
-.schedule-visit{
-    position: absolute;
-    top: 440px;
-    left: 160px;
-    padding: 14px;
-    font-size: 11px;
-    color: #114814;
-    border: 1px solid #114814;
-    text-decoration: none;
-}
-
-.schedule-visit:hover{
-    background-color: #114814;
-    color: rgb(255, 255, 255);
-    transition-duration: 0.4s;
-}
-
-.nav-title{
-    position: absolute;
-    top: 55px;
-    left: 420px;
-    font-size: 40px;
-    font-style: normal;
-    color: #114814;
-}
-
-.all-location-nav{
-    position: absolute;
-    top: 3vw;
-    left: 87vw;
-}
-.all-location-nav a{
-    text-decoration: none;
-    color: #114814;
-}
-
-.all-location-nav b{
-  font-size: 20px;
-  padding-left: 8px;
-
-}
 
 @media(max-width: 1380px){
     .all-location-nav{
@@ -453,64 +470,9 @@ input::placeholder{
 }
 
 
-.body-slide{
-    height: 40.5vw;
-    top: 140px;
-    position: absolute;
-    left: 420px;
-    width: 85%;
-    background-color: rgb(241, 240, 240);
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
 
 
 
-.short-cut-to-qs{
-    position: absolute;
-    top: 41vw;
-    left: 0.5vw;
-}
-
-.short-cut-to-qs h4{
-    font-size: 16px;
-}
-
-.short-cut-to-qs p{
-    position: relative;
-    top: -33px;
-    left: 60px;
-    font-weight: normal;
-    text-align: right;
-}
-
-.quicksearchnav{
-    position: relative;
-    top: -93px;
-    left: 15.3vw;
-    text-decoration: none;
-    color: #114814;
-    font-size: 15px;
-}
-
-
-.shortcut-title-qs{
-    text-decoration: none;
-    position: relative;
-    left: 330px;
-    top: -88px;
-    color: #114814;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.short-cut-to-qs img{
-    width: 30px;
-    position: relative;
-    top: 10px;
-}
 
 
 
@@ -525,7 +487,7 @@ input::placeholder{
 /* MAIN BODY OF THE WHOLE PAGE */
 .mainpage{
     grid-column-start: 2;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(241, 241, 241);;
 }
 
 .popup_chat{

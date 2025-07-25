@@ -23,97 +23,66 @@
 
         <div id="myNav" class="overlay">
         
-        
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); closeSwipe2(); closeSwipe3(); closeSwipe4()">&times;</a>
-        <div class="sidebar-nav">
-            <a href="mainwebsite.html" class="img-1">
-                <img src="ortigas_long_logo.jpg" class="ortigas_long_logo">
-            </a>
-         
-            <div class="overlay-content">
-                    <a href="mainwebsite.html" class="home-nav">Home</a>
-                    <a href="#" class="location-nav" onclick="openSwipe2();  closeSwipe3(); closeSwipe4()">Locations</a><!----nav to slide------>
-                    <a href="#" class="estates-nav" onclick="openSwipe3(); closeSwipe2(); closeSwipe4()">Estates</a><!------nav to slide1----->
-                    <a href="#" class="properties-nav"onclick="openSwipe4(); closeSwipe2(); closeSwipe3()">Properties</a><!-----nav to slide3---->
-                    <a href="aboutus.html" class="aboutus-nav">About Us</a>
-                    <a href="contactus.html" class="contactus-nav">Contact Us</a>    
-                    
-                    <form class="form-input">
-                        <div class="search">
-                            <input type="text" placeholder="Search this website" name="search" class="input">
-                            <button type="submit" class="search-btn">
-                                <i style="font-size: 20px; color: rgb(33, 33, 33);"class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                    
-                    <a href="#" class="inquire-price">INQUIRE PRICE</a>
-                    <a href="#" class="schedule-visit">SCHEDULE A VISIT</a>
-
+        <div class="sidebar_nav">
+            <div class="logo_of_ortigas">
+                <a class="logo_ortigas_btn">
+                    <img src="ortigas_long_logo.jpg" class="logo_ortigas_long">
+                </a>
             </div>
-        </div>
 
-
-        
-
-        <div class="html-slide">
-            <div class="body-slide">   
-                    <div class="location_swiper" id="swipe2Form">
-                        <div class="swiper mySwiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">slide 1</div>
-                                <div class="swiper-slide">slide 2</div>
-                                <div class="swiper-slide">slide 3</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="estates_swiper" id="swipe3Form">
-                        <div class="swiper mySwiper3">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">slide 1</div>
-                                <div class="swiper-slide">slide 2</div>
-                                <div class="swiper-slide">slide 3</div>
-                                <div class="swiper-slide">slide 4</div>
-                                <div class="swiper-slide">slide 5</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="properties_swiper" id="swipe4Form">
-                        <div class="swiper mySwiper4">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">slide 1</div>
-                                <div class="swiper-slide">slide 2</div>
-                                <div class="swiper-slide">slide 3</div>
-                                <div class="swiper-slide">slide 4</div>
-                                <div class="swiper-slide">slide 5</div>
-                                <div class="swiper-slide">slide 6</div>
-                                <div class="swiper-slide">slide 7</div>
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="short-cut-to-qs">
-                    <h4>Not quite what you're looking for?                          <p>Try our</p></h4>
-                    <a href="#" class="shortcut-title-qs" onclick="openNav1(); closeNav()">QUICK SEARCH
-                        <img src="quicksearch.jpg" class="qs-img-logo">  
-                    </a>
-                    
+            <div class="all_nav_items">
+                <div class="nav_home">
+                    <a href="#">Home</a>
+                </div> 
+                <div>
+                    <a href="#" class="nav_items active">Locations</a>
                 </div>
-
-
+                <div>
+                    <a href="#" class="nav_items">Estates</a>
+                </div>
+                <div>
+                    <a href="#" class="nav_items">Properties</a>
+                </div>
+                 <div class="nav_aboutus">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="nav_contactus">
+                    <a href="#">Contact Us</a>
+                </div> 
             </div>
-             
+
+            <form class="type_locations">
+                <input placeholder="Search something"></input>
+                <button type="submit"><i class="fa">&#xf002;</i></button>
+            </form>
+
+            <div class="nav_buttons">
+                <a class="inquire_btn_nav">INQUIRE PRICE</a>
+                <a class="schedule_btn_nav">SCHEDULE A VISIT</a>
+            </div>
         </div>
 
-        </div>  
+        <div class="mainbody_nav">
+            <div class="close_butun">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); closeSwipe2(); closeSwipe3(); closeSwipe4()">&times;</a>
+                LOCATION
+            </div>
+        </div>
+        
+        </div>
+
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         
 
 
     <div id="myNav1" class="overlay1">
+
+        <div>
+
+        </div>
+
+        <div>
         <a href="javascript1:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
             <div class="overlay-content1">
                 <a href="#">About4fe</a>
@@ -121,6 +90,7 @@
                 <a href="#">About6</a>
                 <a href="#">About7</a>
             </div>
+        </div>
     </div>
 
     <div class="message_chat">

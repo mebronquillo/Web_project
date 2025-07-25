@@ -61,8 +61,8 @@ var swiper = new Swiper (".mySwiper1", {
   });
 
 var swiper = new Swiper (".mySwiper2",{
-  slidesPerView: 2,
-  spaceBetween: 30,
+  slidesPerView: 2.8,
+  spaceBetween: 40,
 });
 
 var swiper = new Swiper (".mySwiper3",{
@@ -97,7 +97,19 @@ function closeSwipe4(){
   document.getElementById("swipe4Form").style.display = "none";
 }
 
+var nav = document.querySelector(".all_nav_items");
+var link = document.querySelectorAll(".nav_items");
+link.forEach(function (a) {
+  a.addEventListener("click", function () {
+    nav.querySelector(".active").classList.remove("active");
+    a.classList.add("active");
+  });
+});
 
+
+    
+
+  
 
 
 
