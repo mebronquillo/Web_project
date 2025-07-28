@@ -136,6 +136,7 @@ body{
     padding: 10px;
     width: 50px;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .message_style{
@@ -193,14 +194,8 @@ body{
 
 
 /* Location Swiper */
-.location_swiper{
-    padding-left: 3rem;
-    display: none;
-    position: relative;
-    right: 4.3rem;
-    
-    height: 100%;
-    width: 93%;
+.locations_swipe{
+   height: 73%; 
 }
 
 .mySwiper2{
@@ -209,7 +204,6 @@ body{
 }
 
 .mySwiper2 .swiper-slide{
-    width: 100%;
     background-color: aqua;
 }
 
@@ -220,22 +214,21 @@ body{
 
 
 /* Estates Swiper */
-.estates_swiper{
-    display: none;
-    position: relative;
-    height: 100%;
+.estates_swipe{ 
+    height: 73%;  
 }
 
 .mySwiper3{
     width: 100%;
     height: 100%;
 }
+.mySwiper3 .swiper-slide{
+    background-color: #2f443a;
+}
 
 /* Properties Swiper */
-.properties_swiper{
-    display: none;
-    position: relative;
-    height: 100%;
+.properties_swipe{
+    height: 73%;
 }
 
 .mySwiper4{
@@ -243,6 +236,9 @@ body{
     width: 100%;
 }
 
+.mySwiper4 .swiper-slide{
+    background-color: #2f8336;
+}
 /*------for sidebar-nav-----------*/
 
 .overlay{
@@ -320,7 +316,14 @@ body{
     font-weight: 400;
     text-decoration: none;
     color: #aca7a7;
+    display: grid;
+    grid-template-columns: 1fr max-content;
 }
+
+.nav_items i{
+    font-size: 1.3rem;
+}
+
 .nav_items:hover{
     color: black;
 }
@@ -366,7 +369,7 @@ body{
     height: 32px;
     width: 32px;
     padding: 0;
-    top: 22.5rem;
+    top: 22.8rem;
     left: 2.3rem;
     font-size: 24px;
     position: absolute;
@@ -441,6 +444,7 @@ body{
 
 /* navigation buttons */
 
+
 .closebtn{
     top: .625rem;
     cursor: pointer;
@@ -453,6 +457,35 @@ body{
     color: #03640b;
 }
 
+.locationsTitle{
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+.locationsTitle h2{
+    font-size: 40px;
+    visibility: inherit;
+    color: #03640b;
+    font-weight: 300;
+}
+.locationsTitle_nav{
+    text-align: right;  
+}
+.locationsTitle_nav a{
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: #03640b;
+    cursor: pointer;
+}
+.locationsTitle_nav i{
+    position: relative;
+    top: 0.1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    
+}
 
 @media(max-width: 1380px){
     .all-location-nav{
@@ -1931,6 +1964,9 @@ body{
     line-height: 1.6rem;
     color: #105230;
 }
+.estates_boxes a:hover{
+    text-decoration:underline;
+}
 
 /* FOOTER PROPERTIES */
 .footer_properties{
@@ -1947,6 +1983,9 @@ body{
     text-decoration: none;
     line-height: 1.6rem;
     color: #105230;
+}
+.properties_boxes a:hover{
+    text-decoration:underline;
 }
 
 .footer_rights{

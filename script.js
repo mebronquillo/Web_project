@@ -1,7 +1,9 @@
 //Sidebar navigator
 //For menu button
+
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
+    
   }
   
 function closeNav() {
@@ -18,14 +20,17 @@ function closeNav1() {
     document.getElementById("myNav1").style.width = "0%";
   }
 
+var popupChat = document.querySelector(".popup_chat");
 // Popup chat 
 function openForm(){
-    document.getElementById("myChat").style.display = "block";
+  if(popupChat.style.display === "block"){
+    popupChat.style.display = "none";  
+  }
+  else{
+    popupChat.style.display = "block";  
+  }   
 }
 
-function closeForm(){
-    document.getElementById("myChat").style.display = "none";
-}
 
 var menu =['Slide 1','Slide 2','Slide 3','Slide 4']
 var swiper = new Swiper (".mySwiper1", {
@@ -75,36 +80,53 @@ var swiper = new Swiper (".mySwiper4", {
   spaceBetween: 30,
 })
 
-
+var locationnav = document.querySelector(".locations_swipe");
+var estatenav = document.querySelector(".estates_swipe");
+var propertiesnav = document.querySelector(".properties_swipe");
 function openSwipe2(){
-    document.getElementById("swipe2Form").style.display = "block"; 
-}
-function closeSwipe2(){
-  document.getElementById("swipe2Form").style.display = "none";
+    if(locationnav.style.display === "block"){
+        locationnav.style.display = "block";  
+    }else{
+      estatenav.style.display = "none";
+      propertiesnav.style.display = "none";
+      locationnav.style.display = "block";
+    }
 }
 
 function openSwipe3(){
-    document.getElementById("swipe3Form").style.display = "block"; 
-}
-function closeSwipe3(){
-  document.getElementById("swipe3Form").style.display = "none";
+    if(estatenav.style.display === "block"){
+      estatenav.style.display = "block";
+    }else{
+      locationnav.style.display = "none";
+      propertiesnav.style.display = "none";
+      estatenav.style.display = "block";
+    }
 }
 
 function openSwipe4(){
-    document.getElementById("swipe4Form").style.display = "block"; 
+    if(propertiesnav.style.display === "block"){
+      propertiesnav.style.display = "block";
+    }else{
+      locationnav.style.display = "none";
+      estatenav.style.display = "none";
+      propertiesnav.style.display = "block";
+    }
 }
-function closeSwipe4(){
-  document.getElementById("swipe4Form").style.display = "none";
-}
+
 
 var nav = document.querySelector(".all_nav_items");
 var link = document.querySelectorAll(".nav_items");
+
 link.forEach(function (a) {
   a.addEventListener("click", function () {
-    nav.querySelector(".active").classList.remove("active");
+    nav.querySelector(".active") 
+    .classList.remove("active");
     a.classList.add("active");
+    
   });
 });
+
+
 
 
     

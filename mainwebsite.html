@@ -35,13 +35,13 @@
                     <a href="#">Home</a>
                 </div> 
                 <div>
-                    <a href="#" class="nav_items active">Locations</a>
+                    <a href="#" class="nav_items active" onclick="openSwipe2()">Locations<i class="fa">&#xf105;</i></a>
                 </div>
                 <div>
-                    <a href="#" class="nav_items">Estates</a>
+                    <a href="#" class="nav_items" onclick="openSwipe3()">Estates<i class="fa">&#xf105;</i></a>
                 </div>
                 <div>
-                    <a href="#" class="nav_items">Properties</a>
+                    <a href="#" class="nav_items" onclick="openSwipe4()">Properties<i class="fa">&#xf105;</i></a>
                 </div>
                  <div class="nav_aboutus">
                     <a href="#">About Us</a>
@@ -64,9 +64,55 @@
 
         <div class="mainbody_nav">
             <div class="close_butun">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); closeSwipe2(); closeSwipe3(); closeSwipe4()">&times;</a>
-                LOCATION
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </div>
+
+            <div class="locationsTitle">
+                <h2>LOCATIONS</h2>
+                <div class="locationsTitle_nav">
+                    <a href="#">ALL LOCATIONS<i class="fa">&#xf105;</i></a>
+                </div>
+            </div>
+
+            <div class="locations_swipe" id="swipe2Form">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="estates_swipe" id="swipe3Form">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="properties_swipe" id="swipe4Form">
+                <div class="swiper mySwiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
         
         </div>
@@ -94,8 +140,8 @@
     </div>
 
     <div class="message_chat">
-        <div class="inside_message_chat">
-            <a class="message_style" onclick="openForm()"><i class="fa">&#xf075;</i></a>
+        <div class="inside_message_chat" onclick="openForm()">
+            <a class="message_style"><i class="fa">&#xf075;</i></a>
         </div>
 
     <div class="popup_chat" id="myChat">
@@ -191,7 +237,7 @@
             <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="ed2.jpg">
+                        <img src="WebImages/container_1/residences.jpg">
                         <div class="slide1_title">
                             <div class="slide1_inside">
                                 <h2 data-swiper-parallax-x="-300" data-swiper-parallax-opacity="-10">The Galleon: Modern Living in the Heart of the Ortigas Center</h2>
@@ -206,7 +252,7 @@
                         </div
                     </div>
                     <div class="swiper-slide">
-                        <img src="WebImages/wallpaperflare.com_wallpaper (2).jpg">
+                        <img src="WebImages/container_1/empress.jpg">
                         <div class="slide2_title">
                             <div class="slide2_inside">
                                 <h2 data-swiper-parallax-x="-300" data-swiper-parallax-opacity="-10">Discover Tranquil Luxury at Empress: Unwind and Embrace 
@@ -222,7 +268,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="WebImages/ward_img.jpg"> 
+                        <img src="WebImages/container_1/maple.jpg"> 
                         <div class="slide3_title">
                             <div class="slide3_inside">
                                 <h2 data-swiper-parallax-x="-300" data-swiper-parallax-opacity="-10">
@@ -239,7 +285,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="WebImages/Above+the+Heavens.jpg">
+                        <img src="WebImages/container_1/odin.jpg">
                         <div class="slide4_title">
                             <div class="slide4_inside">
                                 <h2 data-swiper-parallax-x="-300" data-swiper-parallax-opacity="-10">Experience Living Where All you Need is all in reach</h2>
