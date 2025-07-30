@@ -2,6 +2,9 @@
 @import "tailwindcss";
 
 
+
+
+
 /*for sidebar*/
 .sidebar{
     width: 112px;
@@ -82,6 +85,7 @@
     left: 0;
     background-color: rgb(255, 251, 251);
     overflow-x: hidden;
+    overflow: hidden;
     transition: 0.2s;
 }
 
@@ -195,7 +199,6 @@ body{
 
 /* Location Swiper */
 .locations_swipe{
-   height: 73%; 
 }
 
 .mySwiper2{
@@ -203,42 +206,280 @@ body{
     height: 100%;
 }
 
-.mySwiper2 .swiper-slide{
-    background-color: aqua;
-}
-
 .mySwiper2 .swiper-slide img{
     width: 100%;
-    height: 80%;
+    height: 100%;
+}
+.inside_swiper_slide{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.pasig_city_swipe{
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+.pasig_city_swipe h3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2;
+    min-height: 29px;
+}
+.pasig_city_swipe_btn{
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+}
+.pasig_city_swipe_btn a{
+    text-decoration: none;
+    margin: 0 5px 0 0;
+    width: 60px;
+    max-width: 160px;
+    font: 600;
+    font-size: 10px;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #03640b;
+    color: #03640b;
+}
+.pasig_city_swipe_btn a:hover{
+    background-color: #2f443a;
+    color: #f0f0f0;
+    transition: 0.4s;
 }
 
+.inside_swiper_slide2{
+    display: grid;
+    grid-template-columns:  repeat(1, minmax(0, 1fr));
+}
+.quezon_city_swipe{
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+.quezon_city_swipe h3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2;
+    min-height: 29px;
+}
+.quezon_city_swipe_btn{
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+}
+.quezon_city_swipe_btn a{
+    text-decoration: none;
+    margin: 0 5px 0 0;
+    width: 60px;
+    max-width: 160px;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #03640b;
+    color: #03640b;
+}
+.quezon_city_swipe_btn a:hover{
+    background-color: #2f443a;
+    color: #f0f0f0;
+    transition: 0.4s;
+}
+
+.inside_swiper_slide2{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.san_juan_city_swipe{
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+.san_juan_city_swipe h3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.2;
+    min-height: 29px;
+}
+.san_juan_swipe_btn{
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+}
+.san_juan_swipe_btn a{
+    text-decoration: none;
+    margin: 0 5px 0 0;
+    width: 60px;
+    max-width: 160px;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #03640b;
+    color: #03640b;
+}
+.san_juan_swipe_btn a:hover{
+    background-color: #2f443a;
+    color: #f0f0f0;
+    transition: 0.4s;
+}
 
 /* Estates Swiper */
 .estates_swipe{ 
-    height: 73%;  
+    position: relative; 
+    background-color: #fefefe;
 }
 
 .mySwiper3{
     width: 100%;
     height: 100%;
 }
-.mySwiper3 .swiper-slide{
-    background-color: #2f443a;
+.mySwiper3 .swiper-slide img{
+    width: 100%;
+    height: 100%;
 }
+
+.estate_swipe_box{
+    text-decoration: none;
+    cursor: pointer;
+}
+.estates_slide{
+    padding: 1rem;
+    text-align: left;
+    background-color: #f3eeee;
+}
+.estates_slide h3{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #03640b;
+}
+.estates_slide p{
+    color: #03640b;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.ortigas_center_img{
+    background-color: #f3eeee;
+}
+.ortigas_center_img img{
+    margin-bottom: 0;
+    margin: 0 0 1rem;
+}
+.estates_learn_more{
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #ab7201;
+    padding: 1rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .625rem;
+}
+
+.estate_swipe_box1{
+    text-decoration: none;
+}
+.estates_slide1{
+    padding: 1rem;
+    text-align: left;
+    background-color: #f3eeee;
+}
+.estates_slide1 h3{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #03640b;
+}
+.estates_slide1 p{
+    color: #03640b;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.ortigas_east_img{
+    background-color: #f3eeee;
+}
+.ortigas_east_img img{
+    margin-bottom: 0;
+    margin: 0 0 1rem;
+}
+
 
 /* Properties Swiper */
 .properties_swipe{
-    height: 73%;
+    position: relative;
+    height: 100%;
 }
-
 .mySwiper4{
     height: 100%;
     width: 100%;
 }
-
-.mySwiper4 .swiper-slide{
-    background-color: #2f8336;
+.mySwiper4 .swiper-slide img{
+    width: 100%;
+    height: 100%;
 }
+
+
+
+.quick_search_container{
+    margin-top: 30px;
+}
+.inside_qs_container{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+}
+.inside_qs_container p{
+    padding-right: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+.try_our_qs{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
 /*------for sidebar-nav-----------*/
 
 .overlay{
@@ -438,8 +679,8 @@ body{
     max-height: 100vh;
     top: 0;
     left: 0;
+    overflow-y: hidden; /*hide scrollbar*/
 }
-
 
 
 /* navigation buttons */
@@ -461,7 +702,7 @@ body{
     padding-right: 3rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 .locationsTitle h2{
@@ -474,6 +715,8 @@ body{
     text-align: right;  
 }
 .locationsTitle_nav a{
+    position: relative;
+    top: 2rem;
     text-decoration: none;
     letter-spacing: .1em;
     color: #03640b;
@@ -521,6 +764,7 @@ body{
 .mainpage{
     grid-column-start: 2;
     background-color: rgb(241, 241, 241);;
+    
 }
 
 .popup_chat{

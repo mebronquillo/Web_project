@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <title>Document</title>
@@ -35,7 +36,7 @@
                     <a href="#">Home</a>
                 </div> 
                 <div>
-                    <a href="#" class="nav_items active" onclick="openSwipe2()">Locations<i class="fa">&#xf105;</i></a>
+                    <a href="#" class="nav_items active" onclick="openSwipe2(); animationswipe()">Locations<i class="fa">&#xf105;</i></a>
                 </div>
                 <div>
                     <a href="#" class="nav_items" onclick="openSwipe3()">Estates<i class="fa">&#xf105;</i></a>
@@ -64,7 +65,7 @@
 
         <div class="mainbody_nav">
             <div class="close_butun">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a  class="closebtn" onclick="closeNav(); closeanimationswipe();">&times;</a>
             </div>
 
             <div class="locationsTitle">
@@ -74,12 +75,47 @@
                 </div>
             </div>
 
-            <div class="locations_swipe" id="swipe2Form">
+            <div class="locations_swipe">
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+
+                        <div class="swiper-slide">
+                            <div class="inside_swiper_slide" id="swipe1">
+                                <a href="#"><img src="WebImages/Locations_swipe/pasig.jpg"></a>
+                                <div class="pasig_city_swipe">
+                                    <h3>Pasig City</h3>
+                                    <div class="pasig_city_swipe_btn">
+                                        <a href="#">ESTATES</a>
+                                        <a href="#">PROPERTIES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" >
+                            <div class="inside_swiper_slide1" id="swipe2"> 
+                                <a href="#"><img src="WebImages/Locations_swipe/Quezon.jpg"></a>
+                                <div class="quezon_city_swipe">
+                                    <h3>Quezon City</h3>
+                                    <div class="quezon_city_swipe_btn">
+                                        <a href="#">ESTATES</a>
+                                        <a href="#">PROPERTIES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="inside_swiper_slide2" id="swipe3">
+                                <a href="#"><img src="WebImages/Locations_swipe/San_juan.jpg"></a>
+                                <div class="san_juan_city_swipe">
+                                    <h3>San Juan City</h3>
+                                    <div class="san_juan_swipe_btn">
+                                        <a href="#">ESTATES</a>
+                                        <a href="#">PROPERTIES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,11 +123,90 @@
             <div class="estates_swipe" id="swipe3Form">
                 <div class="swiper mySwiper3">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="estate_swipe_box">
+                                <div class="estates_slide">
+                                    <h3>Ortigas Center</h3>
+                                    <p>Pasig City</p>
+                                </div>
+                                <div class="ortigas_center_img">
+                                    <img src="WebImages/estates_swipe/ortigas_center_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                            </a>
+                            
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="estate_swipe_box1">
+                                <div class="estates_slide1">
+                                    <h3>Ortigas East</h3>
+                                    <p>Pasig City</p>
+                                </div>
+                                <div class="ortigas_east_img">
+                                    <img src="WebImages/estates_swipe/ortigas_east_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a>
+                                <div>
+                                    <h3>Capitol Commons</h3>
+                                    <p>Pasig City</p>
+                                </div>
+                                <div>
+                                    <img src="WebImages/estates_swipe/capitol_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a>
+                                <div>
+                                    <h3>Greenhills Center</h3>
+                                    <p>San Juan City</p>
+                                </div>
+                                <div>
+                                    <img src="WebImages/estates_swipe/greenhills_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a>
+                                <div>
+                                    <h3>Circulo Verde</h3>
+                                    <p>QUEZON CITY</p>
+                                </div>
+                                <div>
+                                    <img src="WebImages/estates_swipe/circulo_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a>
+                                <div>
+                                    <h3>Costa Calatagan</h3>
+                                    <p>CALATAGAN BATANGAS</p>
+                                </div>
+                                <div>
+                                    <img src="WebImages/estates_swipe/costa_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -111,6 +226,20 @@
                 </div>
 
             </div>
+
+            <div class="quick_search_container">
+                <div class="inside_qs_container">
+                    <p>Not quite what you're looking for?</p>
+                    <div class="try_our_qs">
+                       <p>Try our</p> 
+                       <a>
+                        <span>QUICK SEARCH</span>
+                        <img>
+                       </a>
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>
@@ -171,7 +300,7 @@
             </a>  
         </div>
 
-        <div class="menu1" onclick="openNav(); openSwipe2();">
+        <div class="menu1" onclick="openNav(); openSwipe2(); animationswipe()">
             <img src="menu.jpg" class="menu-img" >
             <a style="cursor: pointer;" class="menu_1" >Menu   
             </a>           

@@ -32,7 +32,7 @@ function openForm(){
 }
 
 
-var menu =['Slide 1','Slide 2','Slide 3','Slide 4']
+// var menu =['Slide 1','Slide 2','Slide 3','Slide 4']
 var swiper = new Swiper (".mySwiper1", {
   speed: 1500,
   loop: true,
@@ -94,6 +94,7 @@ function openSwipe2(){
 }
 
 function openSwipe3(){
+    
     if(estatenav.style.display === "block"){
       estatenav.style.display = "block";
     }else{
@@ -122,9 +123,23 @@ link.forEach(function (a) {
     nav.querySelector(".active") 
     .classList.remove("active");
     a.classList.add("active");
-    
   });
 });
+
+
+var pushanim = document.getElementById("swipe1");
+var pushanim1 = document.getElementById("swipe2");
+var pushanim2 = document.getElementById("swipe3");
+function animationswipe(){
+    pushanim.classList.toggle("active_1")
+    pushanim1.classList.toggle("active_2")
+    pushanim2.classList.toggle("active_3")
+}
+
+
+function animationclose(){
+  
+}
 
 
 
