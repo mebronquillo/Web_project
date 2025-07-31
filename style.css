@@ -354,13 +354,15 @@ body{
 /* Estates Swiper */
 .estates_swipe{ 
     position: relative; 
-    background-color: #fefefe;
+    bottom: 2rem;
+    background-color: #ffffff;
 }
 
 .mySwiper3{
     width: 100%;
     height: 100%;
 }
+
 .mySwiper3 .swiper-slide img{
     width: 100%;
     height: 100%;
@@ -389,6 +391,7 @@ body{
     line-height: 1rem;
     margin-bottom: 0;
     margin-top: 0;
+    text-transform: uppercase;
 }
 .ortigas_center_img{
     background-color: #f3eeee;
@@ -411,6 +414,10 @@ body{
 
 .estate_swipe_box1{
     text-decoration: none;
+    cursor: pointer;
+    margin-right: 32px;
+    position: relative;
+    top: 2rem;
 }
 .estates_slide1{
     padding: 1rem;
@@ -431,11 +438,154 @@ body{
     line-height: 1rem;
     margin-bottom: 0;
     margin-top: 0;
+    text-transform: uppercase;
 }
 .ortigas_east_img{
     background-color: #f3eeee;
 }
 .ortigas_east_img img{
+    margin-bottom: 0;
+    margin: 0 0 1rem;
+}
+
+.estate_swipe_box2{
+    text-decoration: none;
+    cursor: pointer;
+}
+.estate_slide2{
+    padding: 1rem;
+    text-align: left;
+    background-color: #f3eeee;
+}
+.estate_slide2 h3{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #03640b;
+}
+.estate_slide2 p{
+    color: #03640b;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.capitol_img{
+    background-color: #f3eeee;
+}
+.capitol_img img{
+    margin-bottom: 0;
+    margin: 0 0 1rem;
+}
+
+.estate_swipe_box3{
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 32px;
+    position: relative;
+    top: 2rem;
+}
+.estate_slide3{
+    padding: 1rem;
+    text-align: left;
+    background-color: #f3eeee;
+}
+.estate_slide3{
+    padding: 1rem;
+    text-align: left;
+    background-color: #f3eeee;
+}
+.estate_slide3 h3{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #03640b;
+}
+.estate_slide3 p{
+    color: #03640b;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.greenhillis_img{
+    background-color: #f3eeee;
+}
+.greenhillis_img img{
+    margin-bottom: 0;
+    margin: 0 0 1rem;
+}
+
+.estate_swipe_box4{
+    text-decoration: none;
+    cursor: pointer;
+}
+.estate_slide4{
+    padding: 1rem;
+    text-align: left;
+    background-color: #f3eeee;
+}
+.estate_slide4 h3{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #03640b;
+}
+.estate_slide4 p{
+    color: #03640b;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.circulo_img{
+    background-color: #f3eeee;
+}
+.circulo_img img{
+    margin-bottom: 0;
+    margin: 0 0 1rem;
+}
+
+.estate_swipe_box5{
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 32px;
+    position: relative;
+    top: 2rem;
+}
+.estate_slide5{
+    padding: 1rem;
+    text-align: left;
+    background-color: #f3eeee;
+}
+.estate_slide5 h3{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #03640b;
+}
+.estate_slide5 p{
+    color: #03640b;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.costa_img{
+    background-color: #f3eeee;
+}
+.costa_img img{
     margin-bottom: 0;
     margin: 0 0 1rem;
 }
@@ -474,9 +624,15 @@ body{
     text-align: center;
 }
 .try_our_qs{
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    /* justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: center; */
+}
+.try_our_qs p{
+    color: #000;
+    font-weight: 400;
 }
 
 
@@ -491,10 +647,9 @@ body{
     top: 0px;
     left: 0px;
     background-color: rgb(255, 255, 255);
-    overflow-x: hidden;
+    overflow-y: hidden;
     z-index: 3;
     transition: 0.2s;
-    
 }
 
 .sidebar_nav{
@@ -679,7 +834,6 @@ body{
     max-height: 100vh;
     top: 0;
     left: 0;
-    overflow-y: hidden; /*hide scrollbar*/
 }
 
 
