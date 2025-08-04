@@ -851,6 +851,17 @@ body{
     text-decoration: none;
     color: #03640b;
 }
+.closebtn_1{
+    bottom: 34rem;
+    cursor: pointer;
+    right: .625rem;
+    position: absolute;
+    line-height: 1;
+    font-size: 2.5rem;
+    border-width: 0px;
+    text-decoration: none;
+    color: #03640b;
+}
 
 .locationsTitle{
     padding-right: 3rem;
@@ -877,6 +888,38 @@ body{
     cursor: pointer;
 }
 .locationsTitle_nav i{
+    position: relative;
+    top: 0.1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    
+}
+
+.estateTitle{
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.estateTitle h2{
+    font-size: 40px;
+    visibility: inherit;
+    color: #03640b;
+    font-weight: 300;
+}
+.estateTitle_nav{
+    text-align: right;  
+}
+.estateTitle_nav a{
+    position: relative;
+    top: 2.1rem;
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: #03640b;
+    cursor: pointer;
+}
+.estateTitle_nav i{
     position: relative;
     top: 0.1rem;
     left: 1rem;

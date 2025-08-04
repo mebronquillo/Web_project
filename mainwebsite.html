@@ -26,14 +26,14 @@
         
         <div class="sidebar_nav">
             <div class="logo_of_ortigas">
-                <a class="logo_ortigas_btn">
+                <a href="mainwebsite.html" class="logo_ortigas_btn">
                     <img src="ortigas_long_logo.jpg" class="logo_ortigas_long">
                 </a>
             </div>
 
             <div class="all_nav_items">
                 <div class="nav_home">
-                    <a href="#">Home</a>
+                    <a href="mainwebsite.html">Home</a>
                 </div> 
                 <div>
                     <a href="#" class="nav_items active" onclick="openSwipe2(); animationswipe()">Locations<i class="fa">&#xf105;</i></a>
@@ -64,14 +64,12 @@
         </div>
 
         <div class="mainbody_nav">
-            <div class="close_butun">
-                <a  class="closebtn" onclick="closeNav(); closeanimationswipe();">&times;</a>
-            </div>
-
-            
 
             <div class="locations_swipe">
-
+            <div class="close_butun">
+                <a  class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            
             <div class="locationsTitle">
                 <h2>LOCATIONS</h2>
                 <div class="locationsTitle_nav">
@@ -123,11 +121,15 @@
                 </div>
             </div>
 
-            <div class="estates_swipe">
+            
 
-                <div class="locationsTitle">
+            <div class="estates_swipe">
+            <div class="close_butun">
+                <a  class="closebtn_1" onclick="closeNav()">&times;</a>
+            </div>
+            <div class="estateTitle">
                 <h2>ESTATES</h2>
-                <div class="locationsTitle_nav">
+                <div class="estateTitle_nav">
                     <a href="#">ALL ESTATES<i class="fa">&#xf105;</i></a>
                 </div>
             </div>
@@ -220,14 +222,9 @@
                 </div>
             </div>
 
-            <div class="properties_swipe" id="swipe4Form">
+            <div class="properties_swipe" >
 
-                <div class="locationsTitle">
-                <h2>Featured Properties</h2>
-                <div class="locationsTitle_nav">
-                    <a href="#">ALL PROPERTIES<i class="fa">&#xf105;</i></a>
-                </div>
-                </div>
+                
                 <div class="swiper mySwiper4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">Slide 1</div>
