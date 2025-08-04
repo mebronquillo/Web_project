@@ -1,17 +1,10 @@
 
-@import "tailwindcss";
-
-
-
-
-
 /*for sidebar*/
 .sidebar{
     width: 112px;
     background-color: rgb(255, 255, 255);
     position: fixed;
     height: 100%;
-    
 }
 
 .sidebar1{
@@ -80,12 +73,11 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 6;
     top: 0;
     left: 0;
     background-color: rgb(255, 251, 251);
-    overflow-x: hidden;
-    overflow: hidden;
+    overflow-y: hidden;
     transition: 0.2s;
 }
 
@@ -198,7 +190,52 @@ body{
 
 
 /* Location Swiper */
+.closebtn{
+    top: .625rem;
+    cursor: pointer;
+    right: .625rem;
+    position: absolute;
+    line-height: 1;
+    font-size: 2.5rem;
+    border-width: 0px;
+    text-decoration: none;
+    color: #03640b;
+    z-index: 2;
+}
+
 .locations_swipe{
+}
+
+.locationsTitle{
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.locationsTitle h2{
+    font-size: 40px;
+    visibility: inherit;
+    color: #03640b;
+    font-weight: 300;
+}
+.locationsTitle_nav{
+    text-align: right;  
+}
+.locationsTitle_nav a{
+    position: relative;
+    top: 2rem;
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: #03640b;
+    cursor: pointer;
+}
+.locationsTitle_nav i{
+    position: relative;
+    top: 0.1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    
 }
 
 .mySwiper2{
@@ -213,6 +250,11 @@ body{
 .inside_swiper_slide{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.tryme{
+    opacity: 1;
+    transform: translateZ(30rem);
+    transition-duration: .3s;
 }
 .pasig_city_swipe{
     padding: 2rem;
@@ -352,6 +394,38 @@ body{
 }
 
 /* Estates Swiper */
+.estateTitle{
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+.estateTitle h2{
+    font-size: 40px;
+    visibility: inherit;
+    color: #03640b;
+    font-weight: 300;
+}
+.estateTitle_nav{
+    text-align: right;  
+}
+.estateTitle_nav a{
+    position: relative;
+    top: 2.1rem;
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: #03640b;
+    cursor: pointer;
+}
+.estateTitle_nav i{
+    position: relative;
+    top: 0.1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    
+}
+
 .estates_swipe{ 
     position: relative; 
     bottom: 2rem;
@@ -375,7 +449,7 @@ body{
 .estates_slide{
     padding: 1rem;
     text-align: left;
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .estates_slide h3{
     margin-bottom: .5rem;
@@ -394,7 +468,7 @@ body{
     text-transform: uppercase;
 }
 .ortigas_center_img{
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .ortigas_center_img img{
     margin-bottom: 0;
@@ -422,7 +496,7 @@ body{
 .estates_slide1{
     padding: 1rem;
     text-align: left;
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .estates_slide1 h3{
     margin-bottom: .5rem;
@@ -441,7 +515,7 @@ body{
     text-transform: uppercase;
 }
 .ortigas_east_img{
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .ortigas_east_img img{
     margin-bottom: 0;
@@ -455,7 +529,7 @@ body{
 .estate_slide2{
     padding: 1rem;
     text-align: left;
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .estate_slide2 h3{
     margin-bottom: .5rem;
@@ -474,7 +548,7 @@ body{
     text-transform: uppercase;
 }
 .capitol_img{
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .capitol_img img{
     margin-bottom: 0;
@@ -491,12 +565,12 @@ body{
 .estate_slide3{
     padding: 1rem;
     text-align: left;
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .estate_slide3{
     padding: 1rem;
     text-align: left;
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .estate_slide3 h3{
     margin-bottom: .5rem;
@@ -515,7 +589,7 @@ body{
     text-transform: uppercase;
 }
 .greenhillis_img{
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .greenhillis_img img{
     margin-bottom: 0;
@@ -529,7 +603,7 @@ body{
 .estate_slide4{
     padding: 1rem;
     text-align: left;
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .estate_slide4 h3{
     margin-bottom: .5rem;
@@ -548,7 +622,7 @@ body{
     text-transform: uppercase;
 }
 .circulo_img{
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .circulo_img img{
     margin-bottom: 0;
@@ -565,7 +639,7 @@ body{
 .estate_slide5{
     padding: 1rem;
     text-align: left;
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .estate_slide5 h3{
     margin-bottom: .5rem;
@@ -583,7 +657,7 @@ body{
     margin-top: 0;
 }
 .costa_img{
-    background-color: #f3eeee;
+    background-color: #f5f1f1;
 }
 .costa_img img{
     margin-bottom: 0;
@@ -592,9 +666,39 @@ body{
 
 
 /* Properties Swiper */
+.propertiesTitle{
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.propertiesTitle h2{
+    font-size: 40px;
+    visibility: inherit;
+    color: #03640b;
+    font-weight: 300;
+}
+.propertiesTitle_nav{
+    text-align: right;  
+}
+.propertiesTitle_nav a{
+    position: relative;
+    top: 2.1rem;
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: #03640b;
+    cursor: pointer;
+}
+.propertiesTitle_nav i{
+    position: relative;
+    top: 0.1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+}
+
 .properties_swipe{
     position: relative;
-    height: 100%;
 }
 .mySwiper4{
     height: 100%;
@@ -605,10 +709,56 @@ body{
     height: 100%;
 }
 
+.properties_img{
+    height: 38vw;
+    max-height: 640px;
+    position: relative;
+    margin-bottom: 0;
+    margin: 0 0 1rem;
+}
+.properties_inside_box_title{
+    width: 90%;
+    position: absolute;
+    bottom: 1rem;
+    left: 0px;
+    z-index: 2;
+}
+.properties_inside_box_title h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #f3eeee;
+    text-align: left;
+}
+.properties_inside_box_title p{
+    text-transform: uppercase;
+    color: #ab7201;
+    letter-spacing: .1em;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 5.4rem;
+    text-align: left;
+}
+.properties_img::before{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(14, 20, 20, .1), rgba(14, 20, 20, .8));
+}
+
 
 
 .quick_search_container{
-    margin-top: 30px;
+    margin-top: 14px;
 }
 .inside_qs_container{
     display: grid;
@@ -633,6 +783,21 @@ body{
 .try_our_qs p{
     color: #000;
     font-weight: 400;
+}
+
+.try_our_qs a{
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: 600;
+    color: rgb(25, 71, 25);
+    padding-left: 1rem;
+    border-width: 0;
+    text-decoration: none;
+}
+.try_our_qs img{
+    padding-left: 1rem;
+    height: 1.25rem;
+    vertical-align: middle;
 }
 
 
@@ -830,7 +995,6 @@ body{
     padding-top: 0;
     padding-bottom: 3rem;
     overflow-y: auto;
-    /* width: 100%; */
     max-height: 100vh;
     top: 0;
     left: 0;
@@ -840,92 +1004,6 @@ body{
 /* navigation buttons */
 
 
-.closebtn{
-    top: .625rem;
-    cursor: pointer;
-    right: .625rem;
-    position: absolute;
-    line-height: 1;
-    font-size: 2.5rem;
-    border-width: 0px;
-    text-decoration: none;
-    color: #03640b;
-}
-.closebtn_1{
-    bottom: 34rem;
-    cursor: pointer;
-    right: .625rem;
-    position: absolute;
-    line-height: 1;
-    font-size: 2.5rem;
-    border-width: 0px;
-    text-decoration: none;
-    color: #03640b;
-}
-
-.locationsTitle{
-    padding-right: 3rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-}
-.locationsTitle h2{
-    font-size: 40px;
-    visibility: inherit;
-    color: #03640b;
-    font-weight: 300;
-}
-.locationsTitle_nav{
-    text-align: right;  
-}
-.locationsTitle_nav a{
-    position: relative;
-    top: 2rem;
-    text-decoration: none;
-    letter-spacing: .1em;
-    color: #03640b;
-    cursor: pointer;
-}
-.locationsTitle_nav i{
-    position: relative;
-    top: 0.1rem;
-    left: 1rem;
-    font-size: 1.5rem;
-    
-}
-
-.estateTitle{
-    padding-right: 3rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-.estateTitle h2{
-    font-size: 40px;
-    visibility: inherit;
-    color: #03640b;
-    font-weight: 300;
-}
-.estateTitle_nav{
-    text-align: right;  
-}
-.estateTitle_nav a{
-    position: relative;
-    top: 2.1rem;
-    text-decoration: none;
-    letter-spacing: .1em;
-    color: #03640b;
-    cursor: pointer;
-}
-.estateTitle_nav i{
-    position: relative;
-    top: 0.1rem;
-    left: 1rem;
-    font-size: 1.5rem;
-    
-}
 
 @media(max-width: 1380px){
     .all-location-nav{
@@ -933,21 +1011,6 @@ body{
         left: 84vw;
     }
 }
-
-.closebtn1{
-    position: absolute;
-    left: 98%;
-    font-size: 40px;
-    text-decoration: none;
-    color: #113814;
-}
-
-
-
-
-
-
-
 
 
 /* inside of the sidebar */
@@ -960,8 +1023,8 @@ body{
 /* MAIN BODY OF THE WHOLE PAGE */
 .mainpage{
     grid-column-start: 2;
-    background-color: rgb(241, 241, 241);;
-    
+    background-color: rgb(241, 241, 241);
+    overflow-y: hidden;
 }
 
 .popup_chat{
@@ -2289,6 +2352,7 @@ body{
     background-color: #105230;
     text-transform: uppercase;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .container_7{
