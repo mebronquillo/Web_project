@@ -3,9 +3,556 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buy_property.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 <body>
-    Hello 4
+
+    <div id="myNav" class="overlay">
+        
+        <div class="sidebar_nav">
+            <div class="logo_of_ortigas">
+                <a href="mainwebsite.html" class="logo_ortigas_btn">
+                    <img src="ortigas_long_logo.jpg" class="logo_ortigas_long">
+                </a>
+            </div>
+
+            <div class="all_nav_items">
+                <div class="nav_home">
+                    <a href="mainwebsite.html">Home</a>
+                </div> 
+                <div>
+                    <a href="#" class="nav_items active" onclick="openSwipe2(); animationswipe()">Locations<i class="fa">&#xf105;</i></a>
+                </div>
+                <div>
+                    <a href="#" class="nav_items" onclick="openSwipe3()">Estates<i class="fa">&#xf105;</i></a>
+                </div>
+                <div>
+                    <a href="#" class="nav_items" onclick="openSwipe4()">Properties<i class="fa">&#xf105;</i></a>
+                </div>
+                 <div class="nav_aboutus">
+                    <a href="aboutus.html">About Us</a>
+                </div>
+                <div class="nav_contactus">
+                    <a href="#">Contact Us</a>
+                </div> 
+            </div>
+
+            <form class="type_locations">
+                <input placeholder="Search something"></input>
+                <button type="submit"><i class="fa">&#xf002;</i></button>
+            </form>
+
+            <div class="nav_buttons">
+                <a class="inquire_btn_nav">INQUIRE PRICE</a>
+                <a class="schedule_btn_nav">SCHEDULE A VISIT</a>
+            </div>
+        </div>
+
+        <div class="mainbody_nav">
+
+            <div class="close_butun">
+                <a  class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+
+            <div class="locations_swipe">
+            
+            <div class="locationsTitle">
+                <h2>LOCATIONS</h2>
+                <div class="locationsTitle_nav">
+                    <a href="#">ALL LOCATIONS<i class="fa">&#xf105;</i></a>
+                </div>
+            </div>
+
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="inside_swiper_slide" id="swipe1">
+                                <a href="#"><img src="WebImages/Locations_swipe/pasig.jpg"></a>
+                                <div class="pasig_city_swipe">
+                                    <h3>Pasig City</h3>
+                                    <div class="pasig_city_swipe_btn">
+                                        <a href="#">ESTATES</a>
+                                        <a href="#">PROPERTIES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" >
+                            <div class="inside_swiper_slide1" id="swipe2"> 
+                                <a href="#"><img src="WebImages/Locations_swipe/Quezon.jpg"></a>
+                                <div class="quezon_city_swipe">
+                                    <h3>Quezon City</h3>
+                                    <div class="quezon_city_swipe_btn">
+                                        <a href="#">ESTATES</a>
+                                        <a href="#">PROPERTIES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="inside_swiper_slide2" id="swipe3">
+                                <a href="#"><img src="WebImages/Locations_swipe/San_juan.jpg"></a>
+                                <div class="san_juan_city_swipe">
+                                    <h3>San Juan City</h3>
+                                    <div class="san_juan_swipe_btn">
+                                        <a href="#">ESTATES</a>
+                                        <a href="#">PROPERTIES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="estates_swipe">
+            
+            <div class="estateTitle">
+                <h2>ESTATES</h2>
+                <div class="estateTitle_nav">
+                    <a href="#">ALL ESTATES<i class="fa">&#xf105;</i></a>
+                </div>
+            </div>
+
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="#" class="estate_swipe_box">
+                                <div class="estates_slide">
+                                    <h3>Ortigas Center</h3>
+                                    <p>Pasig City</p>
+                                </div>
+                                <div class="ortigas_center_img">
+                                    <img src="WebImages/estates_swipe/ortigas_center_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="estate_swipe_box1">
+                                <div class="estates_slide1">
+                                    <h3>Ortigas East</h3>
+                                    <p>Pasig City</p>
+                                </div>
+                                <div class="ortigas_east_img">
+                                    <img src="WebImages/estates_swipe/ortigas_east_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="estate_swipe_box2">
+                                <div class="estate_slide2">
+                                    <h3>Capitol Commons</h3>
+                                    <p>Pasig City</p>
+                                </div>
+                                <div class="capitol_img">
+                                    <img src="WebImages/estates_swipe/capitol_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="estate_swipe_box3">
+                                <div class="estate_slide3">
+                                    <h3>Greenhills Center</h3>
+                                    <p>San Juan City</p>
+                                </div>
+                                <div class="greenhillis_img">
+                                    <img src="WebImages/estates_swipe/greenhills_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="estate_swipe_box4">
+                                <div class="estate_slide4">
+                                    <h3>Circulo Verde</h3>
+                                    <p>QUEZON CITY</p>
+                                </div>
+                                <div class="circulo_img">
+                                    <img src="WebImages/estates_swipe/circulo_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="estate_swipe_box5">
+                                <div class="estate_slide5">
+                                    <h3>Costa Calatagan</h3>
+                                    <p>CALATAGAN BATANGAS</p>
+                                </div>
+                                <div class="costa_img">
+                                    <img src="WebImages/estates_swipe/costa_swipe.jpg">
+                                    <p class="estates_learn_more">LEARN MORE<i></i></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="properties_swipe" >
+            
+            <div class="propertiesTitle">
+                <h2>Features Properties</h2>
+                <div class="propertiesTitle_nav">
+                    <a href="#">ALL PROPERTIES<i class="fa">&#xf105;</i></a>
+                </div>
+            </div>
+                <div class="swiper mySwiper4">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="#" class="properties_box">
+                                <div class="inside_properties_box">
+                                    <div class="properties_img">
+                                        <picture>
+                                            <img src="WebImages/properties_costa_swipe.JPG" class="costa">
+                                        </picture>
+                                    </div>
+                                    <div class="properties_inside_box_title">
+                                        <h3>Costa Calatagan</h3>
+                                        <p> Costa Calatagan</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="properties_box">
+                                <div class="inside_properties_box">
+                                    <div class="properties_img">
+                                        <picture>
+                                            <img src="WebImages/properties_residences_galleon.JPG">
+                                        </picture>
+                                    </div>
+                                    <div class="properties_inside_box_title">
+                                        <h3>Residences at The Galleon</h3>
+                                        <p>Ortigas Center</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="properties_box">
+                                <div class="inside_properties_box">
+                                    <div class="properties_img">
+                                        <picture>
+                                            <img src="WebImages/properties_offices_galleon.JPG">
+                                        </picture>
+                                    </div>
+                                    <div class="properties_inside_box_title">
+                                        <h3>Offices at The Galleon</h3>
+                                        <p>Ortigas Center</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="properties_box">
+                                <div class="inside_properties_box">
+                                    <div class="properties_img">
+                                        <picture>
+                                            <img src="WebImages/properties_olin.JPG">
+                                        </picture>
+                                    </div>
+                                    <div class="properties_inside_box_title">
+                                        <h3>Ollin at Jade Drive</h3>
+                                        <p>Ortigas Center</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="properties_box">
+                                <div class="inside_properties_box">
+                                    <div class="properties_img">
+                                        <picture>
+                                            <img src="WebImages/Capturerge.JPG">
+                                        </picture>
+                                    </div>
+                                    <div class="properties_inside_box_title">
+                                        <h3>Maple at Verdant Towers</h3>
+                                        <p>Origas East</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="properties_box">
+                                <div class="inside_properties_box">
+                                    <div class="properties_img">
+                                        <picture>
+                                            <img src="WebImages/Empress_properties.JPG">
+                                        </picture>
+                                    </div>
+                                    <div class="properties_inside_box_title">
+                                        <h3>Empress at Capitol Commons</h3>
+                                        <p>Capitol Commons</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="properties_box">
+                                <div class="inside_properties_box">
+                                    <div class="properties_img">
+                                        <picture>
+                                            <img src="WebImages/properties_maven.JPG">
+                                        </picture>
+                                    </div>
+                                    <div class="properties_inside_box_title">
+                                        <h3>Maven at Capitol Commons</h3>
+                                        <p>Capitol Commons</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quick_search_container">
+                <div class="inside_qs_container">
+                    <p>Not quite what you're looking for?</p>
+                    <div class="try_our_qs">
+                       <p>Try our</p> 
+                       <a href="#">
+                        <span>QUICK SEARCH</span>
+                        <img src="quicksearch.jpg">
+                       </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        </div>
+
+        <script src="script.js"></script>
+        
+        
+
+
+    <div id="myNav1" class="overlay1">
+
+
+        <div>
+        <a href="javascript1:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+            <div class="overlay-content1">
+                <a href="#">About4fe</a>
+                <a href="#">About5</a>
+                <a href="#">About6</a>
+                <a href="#">About7</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="message_chat">
+        <div class="inside_message_chat" onclick="openForm()">
+            <a class="message_style"><i class="fa">&#xf075;</i></a>
+        </div>
+
+    <div class="popup_chat" id="myChat">
+        <form class="form-container">
+            <h1>Chat us!</h1>
+            <h5>Messages</h5>
+            <textarea placeholder="type message..."></textarea>
+
+            <a class="send_btn">Send</a>
+            <a class="close_message" onclick="closeForm()">Close</a>
+        </form>
+    </div>
+    </div>
+
+    
+    <div class="sidebar">
+        <div class="sidebar1">
+            
+        <div class="logo_main">
+            <a href="mainwebsite.html" class="img-1">
+                <img src="ortigas logos.jpg"; class="image"> <!--Testing ng Responsive sa size-->
+            </a>  
+        </div>
+
+        <div class="menu1" onclick="openNav(); openSwipe2(); animationswipe(); openandclosescrollbar()">
+            <img src="menu.jpg" class="menu-img" >
+            <a style="cursor: pointer;" class="menu_1" >Menu   
+            </a>           
+        </div>
+    
+            
+        <div class="menu2">
+            <img src="quicksearch.jpg" class="qs-img" onclick="openNav1()">
+            <a style="cursor: pointer;" class="menu_2">Quick Search
+             </a>
+        </div>
+
+        </div>
+ 
+    </div>
+    <div class="page">
+        <div class="mainpage">
+
+            <h2>Want to inquire about a property? Tell us more.</h2>
+
+  <form id="selectForm" onsubmit="return false">
+    <!-- Level 1 -->
+    <label for="category">Category:</label>
+    <select id="category" onchange="updateSubcategory(); clearError('category')">
+      <option value="">-- Select Category --</option>
+      <option value="fruits">Fruits</option>
+      <option value="vegetables">Vegetables</option>
+    </select>
+    <div id="error-category" class="error">This field is required</div>
+
+    <!-- Level 2 -->
+    <label for="subcategory">Subcategory:</label>
+    <select id="subcategory" onchange="updateItems(); clearError('subcategory')" disabled>
+      <option value="">-- Select Subcategory --</option>
+    </select>
+    <div id="error-subcategory" class="error">This field is required</div>
+
+    <!-- Level 3 -->
+    <label for="item">Item:</label>
+    <select id="item" onchange="clearError('item')" disabled>
+      <option value="">-- Select Item --</option>
+    </select>
+    <div id="error-item" class="error">This field is required</div>
+
+    <!-- Next Button -->
+    <button type="button" id="nextBtn" onclick="validateForm()">Next</button>
+  </form>
+        
+            <footer class="footerside">
+            <div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>Corporate Office</p>
+                    <p>7F Estancia West Wing</p>
+                    <p>Mercalco Avenue,</p>
+                    <p>Pasig City 1605, Philippines</p>
+                    <p>(+632) 8631-1231</p>
+                    <p>Corporate Sales</p>
+                    <p>(+63) 917 678 4427</p>
+                </div>
+            </div>
+            </footer>
+        </div>
+        
+    </div>
+    <script>
+    const data = {
+      fruits: {
+        citrus: ["Orange", "Lemon", "Lime"],
+        berries: ["Strawberry", "Blueberry", "Raspberry"]
+      },
+      vegetables: {
+        leafy: ["Spinach", "Lettuce", "Kale"],
+        root: ["Carrot", "Potato", "Beetroot"]
+      }
+    };
+
+    function updateSubcategory() {
+      const category = document.getElementById("category").value;
+      const subcategory = document.getElementById("subcategory");
+      const item = document.getElementById("item");
+
+      subcategory.innerHTML = '<option value="">-- Select Subcategory --</option>';
+      subcategory.disabled = true;
+      item.innerHTML = '<option value="">-- Select Item --</option>';
+      item.disabled = true;
+
+      if (data[category]) {
+        Object.keys(data[category]).forEach(sub => {
+          const option = document.createElement("option");
+          option.value = sub;
+          option.textContent = sub.charAt(0).toUpperCase() + sub.slice(1);
+          subcategory.appendChild(option);
+        });
+        subcategory.disabled = false;
+      }
+    }
+
+    function updateItems() {
+      const category = document.getElementById("category").value;
+      const subcategory = document.getElementById("subcategory").value;
+      const item = document.getElementById("item");
+
+      item.innerHTML = '<option value="">-- Select Item --</option>';
+      item.disabled = true;
+
+      if (data[category] && data[category][subcategory]) {
+        data[category][subcategory].forEach(i => {
+          const option = document.createElement("option");
+          option.value = i.toLowerCase();
+          option.textContent = i;
+          item.appendChild(option);
+        });
+        item.disabled = false;
+      }
+    }
+
+    function validateForm() {
+      let valid = true;
+
+      const fields = ['category', 'subcategory', 'item'];
+
+      fields.forEach(field => {
+        const value = document.getElementById(field).value;
+        const error = document.getElementById(`error-${field}`);
+
+        if (!value) {
+          error.style.display = 'block';
+          valid = false;
+        } else {
+          error.style.display = 'none';
+        }
+      });
+
+      if (valid) {
+        alert("All fields are selected. Proceeding to the next step...");
+        // You can redirect or go to the next section here
+      }
+    }
+
+    function clearError(fieldId) {
+      document.getElementById(`error-${fieldId}`).style.display = 'none';
+    }
+  </script>
 </body>
 </html>
