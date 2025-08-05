@@ -45,7 +45,7 @@
                     <a href="#" class="nav_items" onclick="openSwipe4()">Properties<i class="fa">&#xf105;</i></a>
                 </div>
                  <div class="nav_aboutus">
-                    <a href="#">About Us</a>
+                    <a href="aboutus.html">About Us</a>
                 </div>
                 <div class="nav_contactus">
                     <a href="#">Contact Us</a>
@@ -905,17 +905,17 @@
                         <div>
                             <div>
                                 <p class="category_selection">Category</p>
-                                <select class="selection_items" placeholder="Select an option">
-                                    <option value="" disabled selected>Select an option</option>
-                                    <option>I'm interested in buying a property</option>
-                                    <option>I want to request a quote</option>
-                                    <option>I want to schedule a visit</option>
-                                    <option>Just hoping to ask some question</option>
+                                <select id="pageSelector" class="selection_items" placeholder="Select an option">
+                                    <option disabled selected>Select an option</option>
+                                    <option value="buy_property.html">I'm interested in buying a property</option>
+                                    <option value="request_quote.html">I want to request a quote</option>
+                                    <option value="schedule.html">I want to schedule a visit</option>
+                                    <option value="ask_question.html">Just hoping to ask some question</option>
                                 </select>
                             </div>
                         </div>
                         <div class="letsgo_nav">
-                            <a class="letsgo_btn">Lets go</a>
+                            <a class="letsgo_btn" onclick="selectpage()">Lets go</a>
                         </div>
                     </div>
                 </div>

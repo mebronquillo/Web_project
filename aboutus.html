@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Select and Redirect</title>
 </head>
 <body>
-    
+
+        <form>
+        <!-- <label for="page-select">Choose a page:</label> -->
+        <select name="pages" id="page-select">
+            <option value="">--Please choose an option--</option>
+            <option value="mainwebsite.html">Page 1</option>
+            <option value="page2.html">Page 2</option>
+            <option value="https://www.google.com">Google</option>
+        </select>
+        <button type="button" onclick="redirectToPage()">Go to Page</button>
+        </form>
+
+    <script>
+        function redirectToPage() {
+            const selectElement = document.getElementById("page-select");
+            const selectedValue = selectElement.value;
+
+        if (selectedValue) { // Check if an option is selected (not the default empty option)
+        window.location.href = selectedValue; // Redirect to the selected URL
+  } else {
+    alert("Please select a page to navigate to."); // Optional: alert if no option is selected
+  }
+}
+    </script>
+
 </body>
 </html>

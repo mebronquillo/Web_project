@@ -137,8 +137,14 @@ function animationswipe(){
 }
 
 
-function animationclose(){
-  
+function selectpage(){
+  var selectelement = document.getElementById("pageSelector");
+  var selectedvalue = selectelement.value;
+  if(selectedvalue){
+    window.location.href = selectedvalue;
+  }else{
+    alert("No page selected")
+  }
 }
 
 
