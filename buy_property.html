@@ -428,36 +428,87 @@
     <div class="page">
         <div class="mainpage">
 
-            <h2>Want to inquire about a property? Tell us more.</h2>
+           <div class="selection_input">
+            <!-- Step 1: Select Options -->
+            <div class="form-step active" id="step1">
+                <h2>Step 1: Choose Options</h2>
 
-  <form id="selectForm" onsubmit="return false">
-    <!-- Level 1 -->
-    <label for="category">Category:</label>
-    <select id="category" onchange="updateSubcategory(); clearError('category')">
-      <option value="">-- Select Category --</option>
-      <option value="fruits">Fruits</option>
-      <option value="vegetables">Vegetables</option>
-    </select>
-    <div id="error-category" class="error">This field is required</div>
+                <form onsubmit="return false">
+                <label for="category">Property Type:</label>
 
-    <!-- Level 2 -->
-    <label for="subcategory">Subcategory:</label>
-    <select id="subcategory" onchange="updateItems(); clearError('subcategory')" disabled>
-      <option value="">-- Select Subcategory --</option>
-    </select>
-    <div id="error-subcategory" class="error">This field is required</div>
+                <select id="category" onchange="updateSubcategory(); clearError('category')">
+                    <option value="">Select Category</option>
+                    <option value="offices">Offices</option>
+                    <option value="residences">Residences</option>
+                </select>
+                <div id="error-category" class="error">This field is required</div>
 
-    <!-- Level 3 -->
-    <label for="item">Item:</label>
-    <select id="item" onchange="clearError('item')" disabled>
-      <option value="">-- Select Item --</option>
-    </select>
-    <div id="error-item" class="error">This field is required</div>
+                <label for="subcategory">Estate:</label>
+                <select id="subcategory" onchange="updateItems(); clearError('subcategory')" disabled>
+                    <option value="">Select Estate</option>
+                </select>
+                <div id="error-subcategory" class="error">This field is required</div>
 
-    <!-- Next Button -->
-    <button type="button" id="nextBtn" onclick="validateForm()">Next</button>
-  </form>
-        
+                <label for="item">Property Name:</label>
+                <select id="item" onchange="clearError('item')" disabled>
+                    <option value="">Select Property</option>
+                </select>
+                <div id="error-item" class="error">This field is required</div>
+
+                <button onclick="validateStep1()">Next</button>
+                </form>
+            </div>
+            
+
+            
+            <!-- Step 2: Personal Info Form -->
+            <div class="form-step" id="step2">
+                <h2>Step 2: Personal Information</h2>
+                <form onsubmit="return submitForm()">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" pattern="[0-9]{10,15}" required>
+
+                <label for="landline">Landline Number:</label>
+                <input type="tel" id="landline" pattern="[0-9]{5,15}">
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree" onclick="toggleSubmit()">
+                    <label for="agree">
+                        <p>By clicking on the button below, I give my consent to Ortigas & Company Limited
+                        Partnership (OCLP) and to its subsidiaries, affiliates, partners, successors and assigns, 
+                        and to their service providers and agents, to collect, possess, use, store and disclose any and all 
+                        information and personal data furnished herein, or as may otherwise be provided by me, for the purpose
+                         of providing me information on their products and services, including but not limited to, offers, 
+                         promotions, and new goods and services.
+                         </p>
+                    </label>
+                </div>
+
+                <button type="submit" id="submitBtn" onclick="thankyou_name()" class="disabled" disabled>Submit</button>
+                <button type="button" onclick="goToStep(1)">Previous</button>
+                </form>
+            </div>
+
+            <div class="thankyou" id="step3">
+                <div id="displayit"></div>
+                Salamat
+            </div>
+            
+            </div>
+                    
+
             <footer class="footerside">
             <div>
                 <div>
@@ -475,84 +526,6 @@
         </div>
         
     </div>
-    <script>
-    const data = {
-      fruits: {
-        citrus: ["Orange", "Lemon", "Lime"],
-        berries: ["Strawberry", "Blueberry", "Raspberry"]
-      },
-      vegetables: {
-        leafy: ["Spinach", "Lettuce", "Kale"],
-        root: ["Carrot", "Potato", "Beetroot"]
-      }
-    };
-
-    function updateSubcategory() {
-      const category = document.getElementById("category").value;
-      const subcategory = document.getElementById("subcategory");
-      const item = document.getElementById("item");
-
-      subcategory.innerHTML = '<option value="">-- Select Subcategory --</option>';
-      subcategory.disabled = true;
-      item.innerHTML = '<option value="">-- Select Item --</option>';
-      item.disabled = true;
-
-      if (data[category]) {
-        Object.keys(data[category]).forEach(sub => {
-          const option = document.createElement("option");
-          option.value = sub;
-          option.textContent = sub.charAt(0).toUpperCase() + sub.slice(1);
-          subcategory.appendChild(option);
-        });
-        subcategory.disabled = false;
-      }
-    }
-
-    function updateItems() {
-      const category = document.getElementById("category").value;
-      const subcategory = document.getElementById("subcategory").value;
-      const item = document.getElementById("item");
-
-      item.innerHTML = '<option value="">-- Select Item --</option>';
-      item.disabled = true;
-
-      if (data[category] && data[category][subcategory]) {
-        data[category][subcategory].forEach(i => {
-          const option = document.createElement("option");
-          option.value = i.toLowerCase();
-          option.textContent = i;
-          item.appendChild(option);
-        });
-        item.disabled = false;
-      }
-    }
-
-    function validateForm() {
-      let valid = true;
-
-      const fields = ['category', 'subcategory', 'item'];
-
-      fields.forEach(field => {
-        const value = document.getElementById(field).value;
-        const error = document.getElementById(`error-${field}`);
-
-        if (!value) {
-          error.style.display = 'block';
-          valid = false;
-        } else {
-          error.style.display = 'none';
-        }
-      });
-
-      if (valid) {
-        alert("All fields are selected. Proceeding to the next step...");
-        // You can redirect or go to the next section here
-      }
-    }
-
-    function clearError(fieldId) {
-      document.getElementById(`error-${fieldId}`).style.display = 'none';
-    }
-  </script>
+    <script src="buy_property.js"></script>
 </body>
 </html>

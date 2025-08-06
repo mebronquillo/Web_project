@@ -18,30 +18,51 @@
     overflow: auto;
 }
 
-.insidemainpage{
+.selection_input{
     display: inherit;
     width: calc(100% - 280px);
     background-color: antiquewhite;
 }
 
-.row{
 
+
+.form-step {
+    display: none;
 }
-.row1{
-    
-    display: flex;
-    flex-wrap: wrap;
-    
+.form-step.active {
+    display: block;
 }
 
-
-
-.label {
-      display: block;
-      margin-top: 15px;
-    }
+.thankyou{
+    display: none;
+}
+.thankyou.active{
+    display: block;
+}
+label {
+    display: block;
+    margin-top: 15px;
+}
+select, input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
 .error {
-      color: red;
-      font-size: 13px;
-      display: none;
-    }
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+.checkbox-group {
+    margin-top: 20px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
