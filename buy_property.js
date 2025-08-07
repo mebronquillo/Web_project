@@ -109,3 +109,8 @@ const data = {
     displayit.textContent = "Thank you " + namemo;
     }
     
+    
+    function gobacktoproperty(){
+      document.getElementById("step1").classList.add("active");
+      document.getElementById("step3").classList.remove("active");
+    }
