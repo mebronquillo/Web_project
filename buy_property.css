@@ -43,12 +43,13 @@ label {
     display: block;
     margin-top: 15px;
 }
-select, input[type="text"], input[type="email"], input[type="tel"] {
+select, input[type="text"], input[type="email"], input[type="tel"], textarea[type="message"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
 }
+
 .error {
     color: red;
     font-size: 13px;
