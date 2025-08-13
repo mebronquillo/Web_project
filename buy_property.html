@@ -31,7 +31,7 @@
                     <a href="mainwebsite.html">Home</a>
                 </div> 
                 <div>
-                    <a href="#" class="nav_items active" onclick="openSwipe2(); animationswipe()">Locations<i class="fa">&#xf105;</i></a>
+                    <a href="#" class="nav_items" onclick="openSwipe2(); animationswipe()">Locations<i class="fa">&#xf105;</i></a>
                 </div>
                 <div>
                     <a href="#" class="nav_items" onclick="openSwipe3()">Estates<i class="fa">&#xf105;</i></a>
@@ -409,7 +409,7 @@
             </a>  
         </div>
 
-        <div class="menu1" onclick="openNav(); openSwipe2(); animationswipe(); openandclosescrollbar()">
+        <div class="menu1" onclick="openNav(); openSwipe2(); openandclosescrollbar()">
             <img src="menu.jpg" class="menu-img" >
             <a style="cursor: pointer;" class="menu_1" >Menu   
             </a>           
@@ -430,12 +430,14 @@
 
            <div class="selection_input">
             <!-- Step 1: Select Options -->
+            <h1>Want to inquire about a property? Tell us more.</h1>
+
             <div class="form-step active" id="step1">
                 <h2>Step 1: Choose Options</h2>
 
                 <form onsubmit="return false">
+                    
                 <label for="category">Property Type:</label>
-
                 <select id="category" onchange="updateSubcategory(); clearError('category')">
                     <option value="">Select Category</option>
                     <option value="offices">Offices</option>
@@ -464,6 +466,7 @@
             <!-- Step 2: Personal Info Form -->
             <div class="form-step" id="step2">
                 <h2>Step 2: Personal Information</h2>
+                
                 <form onsubmit="return submitForm()">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" required>

@@ -1,4 +1,4 @@
-.footerside{
+.footerside1{
     position: fixed;
     top: 0;
     right: 0;
@@ -10,27 +10,25 @@
     width: auto;
 }
 
-.selection_input{
+.select_input_1{
     display: inherit;
     width: calc(100% - 280px);
     background-color: antiquewhite;
 }
 
-
-.form-step {
+.form-step1 {
     display: none;
 }
-.form-step.active {
+.form-step1.active1 {
     display: block;
 }
-
-.thankyou{
+.thankyou1{
     display: none;
 }
-.thankyou.active{
+.thankyou1.active1{
     display: block;
 }
-label {
+label{
     display: block;
     margin-top: 15px;
 }
@@ -40,21 +38,24 @@ select, input[type="text"], input[type="email"], input[type="tel"], textarea[typ
     margin-top: 5px;
     box-sizing: border-box;
 }
-
-.error {
+.error1{
     color: red;
     font-size: 13px;
     display: none;
 }
-.checkbox-group {
+.checkbox-group1{
     margin-top: 20px;
 }
-button {
+
+button{
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
 }
-.disabled {
-    background-color: #ccc;
+
+.disabled{
+    background-color: aliceblue;
     cursor: not-allowed;
 }
+
+

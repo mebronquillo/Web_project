@@ -103,12 +103,13 @@ const data = {
       });
     }
 
+
+    
     function thankyou_name(){
     const namemo = document.getElementById("firstName").value;
     const displayit = document.getElementById("displayit");
     displayit.textContent = "Thank you " + namemo;
     }
-    
     
     function gobacktoproperty(){
       document.getElementById("step1").classList.add("active");

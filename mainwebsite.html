@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -36,7 +37,7 @@
                     <a href="mainwebsite.html">Home</a>
                 </div> 
                 <div>
-                    <a href="#" class="nav_items active" onclick="openSwipe2(); animationswipe()">Locations<i class="fa">&#xf105;</i></a>
+                    <a href="#" class="nav_items active" onclick="openSwipe2()">Locations<i class="fa">&#xf105;</i></a>
                 </div>
                 <div>
                     <a href="#" class="nav_items" onclick="openSwipe3()">Estates<i class="fa">&#xf105;</i></a>
@@ -69,7 +70,7 @@
                 <a  class="closebtn" onclick="closeNav()">&times;</a>
             </div>
 
-            <div class="locations_swipe">
+        <div class="locations_swipe">
             
             <div class="locationsTitle">
                 <h2>LOCATIONS</h2>
@@ -82,7 +83,7 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <div class="inside_swiper_slide" id="swipe1">
+                            <div class="inside_swiper_slide"  data-aos="fade-down" data-aos-delay="0" data-aos-once="true" data-aos-duration="300">
                                 <a href="#"><img src="WebImages/Locations_swipe/pasig.jpg"></a>
                                 <div class="pasig_city_swipe">
                                     <h3>Pasig City</h3>
@@ -92,10 +93,12 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
+                        
 
                         <div class="swiper-slide" >
-                            <div class="inside_swiper_slide1" id="swipe2"> 
+                            <div class="inside_swiper_slide1"  data-aos="fade-down" data-aos-delay="300" data-aos-once="true" data-aos-duration="300"> 
                                 <a href="#"><img src="WebImages/Locations_swipe/Quezon.jpg"></a>
                                 <div class="quezon_city_swipe">
                                     <h3>Quezon City</h3>
@@ -106,8 +109,10 @@
                                 </div>
                             </div>
                         </div>
+                                   
+
                         <div class="swiper-slide">
-                            <div class="inside_swiper_slide2" id="swipe3">
+                            <div class="inside_swiper_slide2"  data-aos="fade-down" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">
                                 <a href="#"><img src="WebImages/Locations_swipe/San_juan.jpg"></a>
                                 <div class="san_juan_city_swipe">
                                     <h3>San Juan City</h3>
@@ -118,8 +123,11 @@
                                 </div>
                             </div>
                         </div>
+                        
+
                     </div>
                 </div>
+
             </div>
 
             
@@ -137,7 +145,7 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <a href="#" class="estate_swipe_box">
+                            <a href="#" class="estate_swipe_box" data-aos="fade-down" data-aos-delay="0" data-aos-once="true" data-aos-duration="300">
                                 <div class="estates_slide">
                                     <h3>Ortigas Center</h3>
                                     <p>Pasig City</p>
@@ -150,7 +158,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a class="estate_swipe_box1">
+                            <a href="#" class="estate_swipe_box1" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" data-aos-duration="300">
                                 <div class="estates_slide1">
                                     <h3>Ortigas East</h3>
                                     <p>Pasig City</p>
@@ -164,7 +172,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a class="estate_swipe_box2">
+                            <a href="#" class="estate_swipe_box2" data-aos="fade-down" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">
                                 <div class="estate_slide2">
                                     <h3>Capitol Commons</h3>
                                     <p>Pasig City</p>
@@ -178,7 +186,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a class="estate_swipe_box3">
+                            <a href="#" class="estate_swipe_box3" data-aos="fade-down" data-aos-delay="900" data-aos-once="true" data-aos-duration="300">
                                 <div class="estate_slide3">
                                     <h3>Greenhills Center</h3>
                                     <p>San Juan City</p>
@@ -192,7 +200,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a class="estate_swipe_box4">
+                            <a href="#" class="estate_swipe_box4" data-aos="fade-down" data-aos-delay="1200" data-aos-once="true" data-aos-duration="300">
                                 <div class="estate_slide4">
                                     <h3>Circulo Verde</h3>
                                     <p>QUEZON CITY</p>
@@ -205,7 +213,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a class="estate_swipe_box5">
+                            <a href="#" class="estate_swipe_box5" data-aos="fade-down" data-aos-delay="1500" data-aos-once="true" data-aos-duration="300">
                                 <div class="estate_slide5">
                                     <h3>Costa Calatagan</h3>
                                     <p>CALATAGAN BATANGAS</p>
@@ -217,7 +225,7 @@
                             </a>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
 
@@ -234,7 +242,7 @@
 
                         <div class="swiper-slide">
                             <a href="#" class="properties_box">
-                                <div class="inside_properties_box">
+                                <div class="inside_properties_box" data-aos="fade-down" data-aos-delay="0" data-aos-once="true" data-aos-duration="300">
                                     <div class="properties_img">
                                         <picture>
                                             <img src="WebImages/properties_costa_swipe.JPG" class="costa">
@@ -249,8 +257,8 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="#" class="properties_box">
-                                <div class="inside_properties_box">
+                            <a href="#" class="properties_box" >
+                                <div class="inside_properties_box" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" data-aos-duration="300">
                                     <div class="properties_img">
                                         <picture>
                                             <img src="WebImages/properties_residences_galleon.JPG">
@@ -266,7 +274,7 @@
 
                         <div class="swiper-slide">
                             <a href="#" class="properties_box">
-                                <div class="inside_properties_box">
+                                <div class="inside_properties_box" data-aos="fade-down" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">
                                     <div class="properties_img">
                                         <picture>
                                             <img src="WebImages/properties_offices_galleon.JPG">
@@ -281,8 +289,8 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="#" class="properties_box">
-                                <div class="inside_properties_box">
+                            <a href="#" class="properties_box" >
+                                <div class="inside_properties_box" data-aos="fade-down" data-aos-delay="900" data-aos-once="true" data-aos-duration="300">
                                     <div class="properties_img">
                                         <picture>
                                             <img src="WebImages/properties_olin.JPG">
@@ -298,7 +306,7 @@
 
                         <div class="swiper-slide">
                             <a href="#" class="properties_box">
-                                <div class="inside_properties_box">
+                                <div class="inside_properties_box" data-aos="fade-down" data-aos-delay="1200" data-aos-once="true" data-aos-duration="300">
                                     <div class="properties_img">
                                         <picture>
                                             <img src="WebImages/Capturerge.JPG">
@@ -313,7 +321,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="#" class="properties_box">
+                            <a href="#" class="properties_box" data-aos="fade-down" data-aos-delay="1500" data-aos-once="true" data-aos-duration="300">
                                 <div class="inside_properties_box">
                                     <div class="properties_img">
                                         <picture>
@@ -329,7 +337,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="#" class="properties_box">
+                            <a href="#" class="properties_box" data-aos="fade-down" data-aos-delay="1800" data-aos-once="true" data-aos-duration="300">
                                 <div class="inside_properties_box">
                                     <div class="properties_img">
                                         <picture>
@@ -359,6 +367,7 @@
                        </a>
                     </div>
                 </div>
+                
             </div>
 
 
@@ -367,8 +376,12 @@
         
         </div>
 
-        <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                            
+        
+
         
 
 
@@ -418,7 +431,7 @@
             </a>  
         </div>
 
-        <div class="menu1" onclick="openNav(); openSwipe2(); animationswipe(); openandclosescrollbar()">
+        <div class="menu1" onclick="openNav(); openSwipe2()">
             <img src="menu.jpg" class="menu-img" >
             <a style="cursor: pointer;" class="menu_1" >Menu   
             </a>           
@@ -445,19 +458,19 @@
             <div class="flex_items">
                 <div class="logo_in_backgroundimage">
                     <div class="fb_btn">
-                        <a class="fb_btn1" href="#">
+                        <a href="https://www.instagram.com/olcresidences" class="fb_btn1" href="#">
                             <i class="fa">&#xf09a;</i>
                         </a>
                     </div><!--Facebook-->
 
                     <div class="insta_btn">
-                        <a class="insta_btn1" href="#">
+                        <a href="https://www.instagram.com/olcresidences" class="insta_btn1" href="#">
                             <i class="fa">&#xf16d;</i>
                         </a>
                     </div><!--Instagram-->
 
                     <div class="youtube_btn">
-                        <a class="youtube_btn1" href="#">
+                        <a href="https://www.youtube.com/c/OrtigasLand" class="youtube_btn1" href="#">
                             <i class="fa">&#xf16a;</i>
                         </a>
                     </div><!--Youtube-->
@@ -470,7 +483,7 @@
                     </div><!--Number contact-->
 
                     <div class="inquire-btn">
-                        <a href="#" class="inquire-btn1">Inquire Now</a>
+                        <a href="buy_property.html" class="inquire-btn1">Inquire Now</a>
                     </div><!--Button-->
                 </div>
             </div>
@@ -557,51 +570,52 @@
 
         
         
-        <div class="container_2">
-        
-        <div class="container_column">
-            <h1 class="guard"></h1>
-            <div class="column_title">
-                <h1 class="titlereimagine">Reimagining Modern Living With Master -Planned Development</h1>
-            </div>
-            <div class="column_with_descrip_img">
-                <h2 class="column_description">Ortigas Land is an esteemed real estate developer in the Philippines that has been 
-                    building developments fostering communities for more than 93 years.
-                </h2>
-                <div class="img_of_90yrs">
-                    <img src="fe2.jpg" class="ninety_yrs_img">
+    <div class="container_2">
+        <div class="inside_container_2">
+
+            <div class="container_2_box1">
+                <div class="container_2_title">
+                    <h1>Building Great Places for life</h1>
                 </div>
-            </div>
-        
-        </div>
-        
-        <div class="container_column_1">
-            <div class="ortigas_landmark">
-                <div class="ortigas_landmark_1">
-                    <img src="fe.jpg" class="ortigasland_img">
+                <div class="container_column_details1">
+                    <h2>For over nine decades, Ortigas Land has crafted vibrant communities 
+                        that blend legacy, innovation, and thoughtful design across Metro Manila and 
+                        beyond.
+                    </h2>
+                    <div class="container_column_details1_img">
+                        <img src="WebImages/container_2/94yrs_ortigas.JPG" >
+                    </div>
                 </div>
             </div>
 
-            <div class="column_with_descrip_img_1">
-                <h2 class="column_description_1">With our years of experience as one of the leading property developers in the country, we have
-                     mastered the secrete to creating 
-                    residential and commercial spaces that suit the specific needs and preferences of our clients.
-                </h2>
-            </div>
-        </div>
-
-        <div class="container_column_2">
-            <div class="picture_with_img">
-                <h2 class="column_description_2">Found in the key locations throughout the Philippines, Ortigas Land properties provide unparalleled ease 
-                    of access to different 
-                    parts of the city and offer the modern Filipino place to live, work, and play.
-                </h2>
-                <div class="LWP">
-                    <img class="lwp_img" src="fe1.jpg">
+            <div class="container_2_box2">
+                <div class="container_column_details2">
+                    <h2></h2>
+                    <div class="container_column_details2_img">
+                        <img src="WebImages/container_2/conta_img.JPG">
+                    </div>
+                </div>
+                <div class="container_column_details2_paragraph">
+                    <h2>From skyline-defining towers to leisure estates by the sea, 
+                        each space is built to inspire wellness, connection, and purposeful 
+                        living.
+                    </h2>
                 </div>
             </div>
+
+            <div class="container_2_box3">
+                <div class="container_column_details3_paragraph">
+                    <h2>Found in the key locations throughout the Philippines, Ortigas Land properties 
+                        provide unparalleled ease of access to different parts of the city and offer the 
+                        modern Filipino place to live, work, and play.
+                    </h2>
+                    <div class="container_column_details3_img">
+                        <img src="WebImages/container_2/img_building.JPG">
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
     </div>
 
      <div class="container_3">
@@ -995,6 +1009,10 @@
         </div>
         <p class="footer_rights">@ 2025 - All rights Reversed</p>
     </div>
+
+   
+
+
     </div>
 <!-- div of main page -->
 

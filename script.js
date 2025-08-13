@@ -3,7 +3,6 @@
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    
   }
   
 function closeNav() {
@@ -85,16 +84,16 @@ var estatenav = document.querySelector(".estates_swipe");
 var propertiesnav = document.querySelector(".properties_swipe");
 function openSwipe2(){
     if(locationnav.style.display === "block"){
-        locationnav.style.display = "block";  
+        locationnav.style.display = "block";    
     }else{
       estatenav.style.display = "none";
       propertiesnav.style.display = "none";
-      locationnav.style.display = "block";
+      locationnav.style.display = "block"; 
     }
 }
 
 function openSwipe3(){
-    
+
     if(estatenav.style.display === "block"){
       estatenav.style.display = "block";
     }else{
@@ -105,6 +104,7 @@ function openSwipe3(){
 }
 
 function openSwipe4(){
+  
     if(propertiesnav.style.display === "block"){
       propertiesnav.style.display = "block";
     }else{
@@ -127,14 +127,7 @@ link.forEach(function (a) {
 });
 
 
-var pushanim = document.getElementById("swipe1");
-var pushanim1 = document.getElementById("swipe2");
-var pushanim2 = document.getElementById("swipe3");
-function animationswipe(){
-    pushanim.classList.toggle("active_1")
-    pushanim1.classList.toggle("active_2")
-    pushanim2.classList.toggle("active_3")
-}
+
 
 
 function selectpage(){
@@ -146,6 +139,19 @@ function selectpage(){
     alert("No page selected")
   }
 }
+
+// for animation of div box
+
+
+  
+
+
+
+
+
+
+
+
 
 
 

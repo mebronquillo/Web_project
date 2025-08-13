@@ -251,11 +251,6 @@ body{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.tryme{
-    opacity: 1;
-    transform: translateZ(30rem);
-    transition-duration: .3s;
-}
 .pasig_city_swipe{
     padding: 2rem;
     background-color: #f0f0f0;
@@ -299,7 +294,7 @@ body{
     transition: 0.4s;
 }
 
-.inside_swiper_slide2{
+.inside_swiper_slide1{
     display: grid;
     grid-template-columns:  repeat(1, minmax(0, 1fr));
 }
@@ -1358,74 +1353,83 @@ body{
 
 /* CONTAINER_2 */
 
-.container_2{
-    background-color: #f6f2f2;
+.container_2{   
+}
+.inside_container_2{
     display: flex;
-    flex-grow: 1;
-    padding-bottom: 6vw;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
-.guard{
-    width: 20rem;
-    background-color: #685a5a;
+.container_2_box1{
+    width: 100%;
 }
 
-/*--------box 1---------*/
-.container_column{
-    margin-top: 7vh;
-    margin-left: 11rem;
+.container_2_box1 h1{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #03640b;
+}
+.container_column_details1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.container_column_details1 h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.container_column_details1_img{
+    position: relative;
+}
+.container_column_details1_img img{
+    opacity: 1;
+    width: 100%;
 }
 
-
-.titlereimagine{
-    background-color: #ffffff;
-    line-height: 3.5rem;
-    color: #114315;
-    font-size: 50px;
-    width: 21vw;
+.container_2_box2{
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.container_column_details2 h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+}
+.container_column_details2_img{
+    position: relative;
+}
+.container_column_details2_img img{
+    opacity: 1;
+    width: 100%;
+}
+.container_column_details2_paragraph{
+    margin-top: 1.25rem;
+    margin-bottom: 1.20rem;
+}
+.container_column_details2_paragraph h2{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
 }
 
-.column_description{
-    font-size: 17px;
-    width: 21vw;
-    background-color: rgb(255, 255, 255);
+.container_2_box3{
+    width: 100%;
 }
-
-.ninety_yrs_img{
-    width: 23vw;
+.container_column_details3_paragraph h2{
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 500;
 }
-
-
-
-
-
-.container_column_1{
-    margin-top: 11vh;
-    margin-left: 1vw;
+.container_column_details3_img{
+    position: relative;
 }
-
-.ortigasland_img{
-    width: 22vw;
-}
-
-.column_description_1{
-    font-size: 17px;
-    width: 21vw;
-}
-
-
-.container_column_2{
-    margin-top: 10vh;
-    margin-left: 2vw;
-}
-
-.column_description_2{
-    font-size: 17px;
-    width: 21vw;
-}
-
-.lwp_img{
-    width: 23vw;
+.container_column_details3_img img{
+    width: 100%;
 }
 
 
@@ -1444,11 +1448,13 @@ body{
 
 .container_3{
     background-color: #f6f2f2;
-    height: 99.8vh;
+    height: 99.8vh; 
+    
 }
 
 .container_3_1{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .estates_img{
@@ -1461,8 +1467,7 @@ body{
 }
 
 .estates_banner_img{
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .estate_description{
@@ -1470,7 +1475,8 @@ body{
     bottom: 2rem;
     padding: 1.25rem;
     width: 17rem;
-    margin-left: 0.5rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
 }
 
 .estate_paragraph{
@@ -1518,7 +1524,11 @@ body{
 
 .container_3_2{
     position: relative;
-    bottom: 175px;
+    bottom: 150px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: 218px;
 }
 
 .container_3_2_1{/*Overflow while responsive*/
@@ -2094,7 +2104,7 @@ body{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #ffffff;
+    /* background: #ffffff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2550,22 +2560,6 @@ body{
         }
     }
 }
-
-
-
-/*Mobile Responsive for Web App*/
-
-@media (max-width: 320px){
-}
-
-@media(max-width: 375){
-
-}
-
-@media(max-width: 425px){
-
-}
-
 
 
 
