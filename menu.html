@@ -7,74 +7,12 @@
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        .container {
-            max-width: 500px;
-            margin: auto;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: none;
-        }
+        
     </style>
 </head>
 <body>
 
-    <h2>AOS Fade Down + Refresh Animation</h2>
-    <button onclick="playAnimation()">Play Animation</button>
-
-    <div class="container">
-        <div class="box" data-aos="fade-down" data-aos-delay="0" data-aos-once="true" data-aos-duration="300">🏠 Home</div>
-        <div class="box" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" data-aos-duration="300">📄 About</div>
-        <div class="box" data-aos="fade-down" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">📞 Contact</div>
-        <div class="box" data-aos="fade-down" data-aos-delay="900" data-aos-once="true" data-aos-duration="300">⚙ Settings</div>
-    </div>
-
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-    
-
-        function playAnimation() {
-            AOS.init();
-            const boxes = document.querySelectorAll(".box");
-
-            // Hide all first to reset animation
-            boxes.forEach(box => {
-                box.style.display = "none";
-            });
-
-            // Show them again with a small delay so AOS replays the animation
-            setTimeout(() => {
-                boxes.forEach(box => {
-                    box.style.display = "block";
-                });
-                AOS.refreshHard(); // Force refresh to replay animations
-            }, 50);
-        }
-    </script>
+    <h1>KOKONUT</h1>
 
 </body>
 </html>

@@ -106,8 +106,8 @@ function goToStep1(step){
 
 function thankyou_name1(){
     const namemo_ = document.getElementById("firstName1").value;
-    const displayit_ = document.getElementById("displayit1");
-    displayit_.textContent = "Thank you po!!" + namemo_;
+    const displayit1 = document.getElementById("displayit1");
+    displayit1.textContent = "Thank you po!!" + namemo_;
 }
 
 function gobacktoproperty1(){
